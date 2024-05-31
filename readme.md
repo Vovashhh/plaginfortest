@@ -24,3 +24,4 @@
     ```sh
     pip install selenium
     ```
+   ### Для запуска нажать на Run в IDE 
