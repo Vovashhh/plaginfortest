@@ -1,0 +1,30 @@
+# created by virtualenv automatically
+.venv/Lib
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Selenium specific
+selenium-server-standalone-*.jar
+
+# OS-specific
+.DS_Store
+Thumbs.db
