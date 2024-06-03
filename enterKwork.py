@@ -10,6 +10,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
+
+
 def test_add_unpacked_extension():
     options = webdriver.ChromeOptions()
 
@@ -19,7 +21,10 @@ def test_add_unpacked_extension():
     options.add_argument(f"--load-extension={extension_dir_path}")
 
     driver = webdriver.Chrome(options=options)
-    driver.get("https://freelance.habr.com/")
+    driver.get("https://kwork.ru/")
+
+    # Перезагрузить страницу
+    driver.refresh()
 
 
     # Находим кнопку "Вход" по тексту ссылки
@@ -33,6 +38,7 @@ def test_add_unpacked_extension():
 
     # Кликаем на кнопку "auto-enter-fixed"
     auto_enter_button.click()
+
 
     # Добавить время ожидания, чтобы увидеть результат
     time.sleep(15)  # Ждем 10 секунд
