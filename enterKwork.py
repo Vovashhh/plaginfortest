@@ -10,23 +10,19 @@ from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from chrome_driver_utils import create_chrome_driver_with_extension
+
 
 
 
 def test_add_unpacked_extension():
     options = webdriver.ChromeOptions()
 
-    # Укажите путь к директории вашего разархивированного расширения
-    extension_dir_path = os.path.abspath(var.pathToPlagin)
+    # Добавление плагина
+    driver = create_chrome_driver_with_extension(var.pathToPlagin)
 
-    options.add_argument(f"--load-extension={extension_dir_path}")
-
-    driver = webdriver.Chrome(options=options)
     driver.get(var.urlKwork)
-
-    # Перезагрузить страницу
     driver.refresh()
-
 
     # Находим кнопку "Вход" по тексту ссылки
     login_button = driver.find_element(By.LINK_TEXT, "Вход")
@@ -40,9 +36,7 @@ def test_add_unpacked_extension():
     # Кликаем на кнопку "auto-enter-fixed"
     auto_enter_button.click()
 
-
-    # Добавить время ожидания, чтобы увидеть результат
-    time.sleep(15)  # Ждем 10 секунд
+    time.sleep(15)  # Ждем 15 секунд
 
     #Закрыть браузер
     driver.quit()

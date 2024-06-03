@@ -10,6 +10,8 @@ from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from chrome_driver_utils import create_chrome_driver_with_extension
+
 
 
 
@@ -17,12 +19,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def test_add_unpacked_extension():
     options = webdriver.ChromeOptions()
 
-    # Укажите путь к директории вашего разархивированного расширения
-    extension_dir_path = os.path.abspath(var.pathToPlagin)
+    # Добавление плагина
+    driver = create_chrome_driver_with_extension(var.pathToPlagin)
 
-    options.add_argument(f"--load-extension={extension_dir_path}")
-
-    driver = webdriver.Chrome(options=options)
     driver.get(var.urlWeblancer)
 
     # Перезагрузить страницу
