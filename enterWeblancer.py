@@ -26,10 +26,6 @@ def test_add_unpacked_extension():
     # Перезагрузить страницу
     driver.refresh()
 
-    # Находим кнопку "Вход" по тексту ссылки
-    login_button = driver.find_element(By.LINK_TEXT, "Вход")
-    login_button.click()
-
 
     # Добавить время ожидания, чтобы увидеть результат
     time.sleep(15)  # Ждем 10 секунд

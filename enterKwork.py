@@ -11,7 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-
 def test_add_unpacked_extension():
     options = webdriver.ChromeOptions()
 
