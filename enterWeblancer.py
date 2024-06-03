@@ -2,6 +2,8 @@ import os
 import re
 import subprocess
 import time
+import var
+
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -16,12 +18,12 @@ def test_add_unpacked_extension():
     options = webdriver.ChromeOptions()
 
     # Укажите путь к директории вашего разархивированного расширения
-    extension_dir_path = os.path.abspath("/Users/max/Downloads/USP_Plugin")
+    extension_dir_path = os.path.abspath(var.pathToPlagin)
 
     options.add_argument(f"--load-extension={extension_dir_path}")
 
     driver = webdriver.Chrome(options=options)
-    driver.get("https://www.weblancer.net/")
+    driver.get(var.urlWeblancer)
 
     # Перезагрузить страницу
     driver.refresh()
