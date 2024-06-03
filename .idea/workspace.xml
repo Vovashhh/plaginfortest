@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление команды для запуска плагина" />
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление команды для запуска плагина">
+      <change afterPath="$PROJECT_DIR$/enterFreelance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterHabr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterKwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterWeblancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterWeblancer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +49,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Python tests in enterFreelance.py.executor": "Run",
     "Python tests.Python tests in enterHabr.py.executor": "Run",
     "Python tests.Python tests in enterKwork.py.executor": "Run",
     "Python tests.Python tests in enterWeblancer.py.executor": "Run",
@@ -159,8 +168,27 @@
       <option name="project" value="LOCAL" />
       <updated>1717416982421</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавление команды для запуска плагина">
+      <option name="closed" value="true" />
+      <created>1717417042347</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717417042347</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
