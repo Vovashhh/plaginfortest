@@ -18,11 +18,13 @@ def setup_driver():
     options = webdriver.ChromeOptions()
     return create_chrome_driver_with_extension(var.pathToPlagin)
 
+
 # Переход на биржу, обновление и логин
 def navigate_and_login(driver):
     driver.get(var.urlFreelance)
     driver.refresh()
     login_and_wait(driver)  # Вход под менеджером
+
 
 # Проверка логина
 def сheck_login():
@@ -44,6 +46,7 @@ def check_ball():
         notification_button.click()
 
         time.sleep(5)
+
 
 if __name__ == "__main__":
     сheck_login()

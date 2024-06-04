@@ -31,4 +31,3 @@ def login_and_wait(driver):
     auto_enter_button.click()
 
     time.sleep(5)  # Ждем 5  секунд
-

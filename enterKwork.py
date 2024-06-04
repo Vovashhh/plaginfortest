@@ -36,8 +36,6 @@ def сheck_login():
         )
 
 
-
-
 def check_ball():
     with setup_driver() as driver:
         navigate_and_login(driver)

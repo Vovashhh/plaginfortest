@@ -28,3 +28,6 @@ selenium-server-standalone-*.jar
 # OS-specific
 .DS_Store
 Thumbs.db
+
+#files
+.enterFreelancer.py
