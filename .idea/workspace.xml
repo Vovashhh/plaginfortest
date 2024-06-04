@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление команды для запуска плагина">
-      <change afterPath="$PROJECT_DIR$/enterFreelance.py" afterDir="false" />
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Оптимизация команд">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enterFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterFreelance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enterHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterHabr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enterKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterKwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enterWeblancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterWeblancer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717417042347</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Оптимизация команд">
+      <option name="closed" value="true" />
+      <created>1717422423631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717422423631</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Оптимизация команд">
+      <option name="closed" value="true" />
+      <created>1717422449098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717422449098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +208,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Добавление переменных" />
     <MESSAGE value="Добавление команды для запуска плагина" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление команды для запуска плагина" />
+    <MESSAGE value="Оптимизация команд" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация команд" />
   </component>
 </project>

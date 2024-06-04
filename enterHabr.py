@@ -10,14 +10,29 @@ from selenium.webdriver.support import expected_conditions as EC
 from chrome_driver_utils import create_chrome_driver_with_extension, login_and_wait
 import var
 
+expected_text_login = "Личный кабинет"
 
-def test_add_unpacked_extension():
+
+def setup_driver():
     options = webdriver.ChromeOptions()
+    return create_chrome_driver_with_extension(var.pathToPlagin)
 
-    # Добавление плагина
-    driver = create_chrome_driver_with_extension(var.pathToPlagin)
+
+def navigate_and_login(driver):
     driver.get(var.urlHabr)
-
     login_and_wait(driver)  # Вход под менеджером
 
-    driver.quit()
+
+def test_add_unpacked_extension():
+    with setup_driver() as driver:
+        navigate_and_login(driver)
+
+        # Проверка наличия элемента с ожидаемым текстом
+        WebDriverWait(driver, 10).until(
+            EC.text_to_be_present_in_element((By.XPATH, "//div[1]/div/header/div[2]/div/div/div/div[1]/a/span"),
+                                             expected_text_login)
+        )
+
+
+if __name__ == "__main__":
+    test_add_unpacked_extension()
