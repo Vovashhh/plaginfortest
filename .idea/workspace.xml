@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Оптимизация команд">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Оптимизация кода">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enterFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterFreelance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enterHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterHabr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enterKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/enterKwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717422449098</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Оптимизация кода">
+      <option name="closed" value="true" />
+      <created>1717482307603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717482307603</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +217,7 @@
     <MESSAGE value="Добавление переменных" />
     <MESSAGE value="Добавление команды для запуска плагина" />
     <MESSAGE value="Оптимизация команд" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация команд" />
+    <MESSAGE value="Оптимизация кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация кода" />
   </component>
 </project>

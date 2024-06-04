@@ -24,7 +24,7 @@ def navigate_and_login(driver):
     login_and_wait(driver)  # Вход под менеджером
 
 
-def test_add_unpacked_extension():
+def сheck_login():
     with setup_driver() as driver:
         navigate_and_login(driver)
 
@@ -37,4 +37,4 @@ def test_add_unpacked_extension():
 
 
 if __name__ == "__main__":
-    test_add_unpacked_extension()
+    сheck_login()

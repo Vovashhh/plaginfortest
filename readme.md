@@ -29,3 +29,12 @@
 
 ___
 1. Weblancer - блокер (капча)
+
+---
+#### Шаблон проверки с учетом логина
+```sh
+def name_check():
+    with setup_driver() as driver:
+        navigate_and_login(driver)
+#Проверка 
+```
