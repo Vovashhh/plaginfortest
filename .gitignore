@@ -30,4 +30,5 @@ selenium-server-standalone-*.jar
 Thumbs.db
 
 #files
-.enterFreelancer.py
+enterFreelancer.py
+enterWeblancer.py
