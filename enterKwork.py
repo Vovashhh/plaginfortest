@@ -36,5 +36,22 @@ def сheck_login():
         )
 
 
+
+
+def check_ball():
+    with setup_driver() as driver:
+        navigate_and_login(driver)
+
+        notification_button = WebDriverWait(driver, 3).until(
+            EC.element_to_be_clickable((By.XPATH, "//div[@class='plugin-notification-button new']"))
+        )
+        notification_button.click()
+        time.sleep(3)
+        notification_button.click()
+
+        time.sleep(5)
+
+
 if __name__ == "__main__":
     сheck_login()
+    check_ball()

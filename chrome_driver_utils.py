@@ -30,4 +30,5 @@ def login_and_wait(driver):
     # Кликаем на кнопку "auto-enter-fixed"
     auto_enter_button.click()
 
-    time.sleep(15)  # Ждем 15 секунд
+    time.sleep(5)  # Ждем 5  секунд
+
