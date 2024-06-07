@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление нажатия на колокольчик" />
-    <list id="f7a9a740-8129-47b0-8f7d-a0c370079e03" name="Changes by max" comment="" />
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление обработки ошибок">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1enterFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/1enterFreelance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests in enterFreelance.py.executor": "Run",
-    "Python tests.Python tests in enterFreelancer.py.executor": "Run",
-    "Python tests.Python tests in enterHabr.py.executor": "Run",
-    "Python tests.Python tests in enterKwork.py.executor": "Run",
-    "Python tests.Python tests in enterWeblancer.py.executor": "Run",
-    "Python tests.Python tests in test.py.executor": "Run",
-    "Python.1enterFreelance.executor": "Run",
-    "Python.enterFreelance.executor": "Run",
-    "Python.enterHabr.executor": "Run",
-    "Python.enterKwork.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/crm.28540/Desktop/plaginfortest",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in enterFreelance.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterFreelancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterHabr.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterKwork.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterWeblancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterHabr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterKwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/crm.28540/Desktop/plaginfortest&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\crm.28540\Desktop\SeleniumTest" />
@@ -238,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717507378949</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Добавление обработки ошибок">
+      <option name="closed" value="true" />
+      <created>1717507494223</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717507494223</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +270,7 @@
     <MESSAGE value="Оптимизация команд" />
     <MESSAGE value="Оптимизация кода" />
     <MESSAGE value="Добавление нажатия на колокольчик" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление нажатия на колокольчик" />
+    <MESSAGE value="Добавление обработки ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление обработки ошибок" />
   </component>
 </project>

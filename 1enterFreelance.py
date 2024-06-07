@@ -45,7 +45,7 @@ def check_ball():
             navigate_and_login(driver)
 
             notification_button = WebDriverWait(driver, 3).until(
-                EC.element_to_be_clickable((By.XPATH, "//div[@class='plugin-notification-button new']"))
+                EC.element_to_be_clickable((By.XPATH, "//div[@class='plugin-notification-button-body']"))
             )
             notification_button.click()
             time.sleep(5)
