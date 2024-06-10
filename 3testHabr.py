@@ -1,7 +1,7 @@
 import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium import webdriver
-from chrome_driver_utils import chrome_with_extension, login_and_wait, click_element, login_and_waitF
+from chrome_driver_utils import chrome_with_extension, login_and_wait, click_element, enter_text
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -27,7 +27,9 @@ def navigate_and_login(driver):
 def check():
     driver = setup_driver()
     navigate_and_login(driver)
-    click_element(driver, "CSS_SELECTOR", var.alertBellBut)
+    driver.get("https://freelance.habr.com/tasks/580572")
+    click_element(driver, "ID", var.uspModeration)
+    enter_text(driver, "ID", var.uspForm, "var.uspForm")
     driver.quit()
 
 

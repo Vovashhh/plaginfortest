@@ -1,10 +1,30 @@
+# Стоит ли переделывать переменные под словарь ...
+
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
+urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
+urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
+urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
+urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
+
 urlKwork = "https://kwork.ru/"
-urlWeblancer = "https://www.weblancer.net/"
+urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
+urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
+urlKworkRegMeSendUSP = ""  # Отправил УТП я
+urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2463017/view"  # Отправил УТП не я
+
 urlFreelance = "https://freelance.ru/"
+urlFreelanceRegMe = ""  # зарегестрированна за мной
+urlFreelanceRegNotMe = ""  # зарегана не мной
+urlFreelanceRegMeSendUSP = ""  # Отправил УТП я
+urlFreelanceRegNotMeSendUSP = ""  # Отправил УТП не я
+
 urlFreelancer = "https://www.freelancer.com/"
+urlFreelancerRegMe = ""  # зарегестрированна за мной
+urlFreelancerRegNotMe = ""  # зарегана не мной
+urlFreelancerRegMeSendUSP = ""  # Отправил УТП я
+urlFreelancerRegNotMeSendUSP = ""  # Отправил УТП не я
 
 # Переменные селекторов
 
@@ -14,31 +34,31 @@ autoLogin = "//button[contains(text(), 'Автовход') and not(contains(text
 sessionLogin = "//button[contains(text(), 'Автовход по сессии')]"
 # Колоколчик CSS_SELECTOR
 alertBellBut = "div.plugin-notification-button"
-#Форма колокольчика CLASS_NAME
+# Форма колокольчика CLASS_NAME
 bellForm = "plugin-notification-popup-container"
-#Пользователи ID
+# Пользователи ID
 bellUser = "user-block-container"
-#Пользователь зарегистрировал проект XPATH
+# Пользователь зарегистрировал проект XPATH
 userRegProj = "//div[contains(., 'Пользователь')][contains(., 'зарегистрировал проект')]"
-#Вы зарегистрировали проект XPATH
+# Вы зарегистрировали проект XPATH
 regProjByMe = "//div[contains(text(), 'зарегистрировали проект')]"
-#Вы отправили УТП XPATH
+# Вы отправили УТП XPATH
 sentUTP = "//div[contains(text(), 'отправили УТП')]"
-#Пользователь &&& отправил УТП XPATH
+# Пользователь &&& отправил УТП XPATH
 otherUserSentUSP = "//div[contains(., 'Пользователь')][contains(., 'отправил УТП')]"
-#Форма когда несколько пользователей на одной заявке XPATH
+# Форма когда несколько пользователей на одной заявке XPATH
 multiUserForm = "//div[contains(., 'Пользователь')][contains(., 'сейчас на этой странице проекта')]"
-#Кружок DzenCode (на зарег заявке) ID
+# Кружок DzenCode (на зарег заявке) ID
 dzenCirle = "btn-plugin"
-#Вкладка история CLASS_NAME
+# Вкладка история CLASS_NAME
 dzenHistoryTab = "plugin-info-button-tab.active"
-#Фото CLASS_NAME
+# Фото CLASS_NAME
 dzenPhotoStory = "plugin-info-icon-block"
-#ФИО CLASS_NAME
+# ФИО CLASS_NAME
 dzenHistoryFullName = "plugin-info-name"
-#ID CLASS_NAME
-dzenHistoryID ="plugin-info-description"
-#Название действия CLASS_NAME
+# ID CLASS_NAME
+dzenHistoryID = "plugin-info-description"
+# Название действия CLASS_NAME
 dzenAction = "plugin-info-info-block-name"
 # Дата CLASS_NAME
 dzenDate = "plugin-info-info-block-date"
@@ -98,6 +118,3 @@ msgSendModerate = "btn-moderation-primary-send"
 msdCancel = "btn-moderation-primary-close"
 # Форма сообщения ID
 msgForm = "plugin-message-textarea"
-
-
-

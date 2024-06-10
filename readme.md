@@ -38,3 +38,13 @@ def name_check():
         navigate_and_login(driver)
 #Проверка 
 ```
+
+#### Использование команды для ввода текста
+<code>
+    enter_text(driver, "ID", var.uspForm, "var.uspForm")
+</code>
+
+#### Использование команды для нажатия на селектор
+<code>
+    click_element(driver, "ID", var.uspModeration)
+</code>

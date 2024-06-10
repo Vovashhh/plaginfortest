@@ -1,7 +1,7 @@
 import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium import webdriver
-from chrome_driver_utils import chrome_with_extension, login_and_wait, click_element
+from chrome_driver_utils import chrome_with_extension, login_and_wait, click_element, enter_text
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

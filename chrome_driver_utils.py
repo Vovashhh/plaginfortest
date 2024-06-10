@@ -12,6 +12,7 @@ def chrome_with_extension(extension_dir_path):
     driver = webdriver.Chrome(options=options)
     return driver
 
+
 # Вынес команды для добавления плагина в отдельный файл
 
 def login_and_wait(driver):
@@ -30,6 +31,8 @@ def login_and_wait(driver):
     auto_enter_button.click()
 
     time.sleep(5)  # Ждем 5  секунд
+
+
 def login_and_waitF(driver):
     login_button = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "a.LinkElement[href='/login']"))
@@ -46,6 +49,7 @@ def login_and_waitF(driver):
     auto_enter_button.click()
 
     time.sleep(5)
+
 
 def click_element(driver, selector_type, selector, wait_time=10):
     if selector_type == "ID":
@@ -73,3 +77,32 @@ def click_element(driver, selector_type, selector, wait_time=10):
 
     element.click()
     time.sleep(2)  # Ждем 2 секунды после клика
+
+
+def enter_text(driver, selector_type, selector, text, wait_time=10):
+    if selector_type == "ID":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.element_to_be_clickable((By.ID, selector))
+        )
+    elif selector_type == "CSS_SELECTOR":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, selector))
+        )
+    elif selector_type == "XPATH":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.element_to_be_clickable((By.XPATH, selector))
+        )
+    elif selector_type == "NAME":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.element_to_be_clickable((By.NAME, selector))
+        )
+    elif selector_type == "CLASS_NAME":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.element_to_be_clickable((By.CLASS_NAME, selector))
+        )
+    else:
+        raise ValueError("Unsupported selector type: " + selector_type)
+
+    element.clear()
+    element.send_keys(text)
+    time.sleep(2)
