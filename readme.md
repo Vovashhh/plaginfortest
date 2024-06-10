@@ -48,3 +48,8 @@ def name_check():
 <code>
     click_element(driver, "ID", var.uspModeration)
 </code>
+
+#### Использование команды для проверки формы на соответсвие
+<code>
+    verify_text_in_element(driver, "XPATH", var.regProjByMe, "Тут текст")
+</code>

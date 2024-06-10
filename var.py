@@ -3,24 +3,28 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
+urlHabrNew = "https://freelance.habr.com/tasks/580560" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
+urlKworkNew = "" #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = ""  # Отправил УТП я
 urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2463017/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
+urlFreelanceNew = "" # новая
 urlFreelanceRegMe = ""  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
 urlFreelanceRegMeSendUSP = ""  # Отправил УТП я
 urlFreelanceRegNotMeSendUSP = ""  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
+urlFreelancerNew = "" # новая
 urlFreelancerRegMe = ""  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = ""  # Отправил УТП я

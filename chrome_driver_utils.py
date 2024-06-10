@@ -106,3 +106,34 @@ def enter_text(driver, selector_type, selector, text, wait_time=10):
     element.clear()
     element.send_keys(text)
     time.sleep(2)
+
+def verify_text_in_element(driver, selector_type, selector, expected_text_part, wait_time=10):
+    if selector_type == "ID":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.presence_of_element_located((By.ID, selector))
+        )
+    elif selector_type == "CSS_SELECTOR":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+        )
+    elif selector_type == "XPATH":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.presence_of_element_located((By.XPATH, selector))
+        )
+    elif selector_type == "NAME":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.presence_of_element_located((By.NAME, selector))
+        )
+    elif selector_type == "CLASS_NAME":
+        element = WebDriverWait(driver, wait_time).until(
+            EC.presence_of_element_located((By.CLASS_NAME, selector))
+        )
+    else:
+        raise ValueError("Unsupported selector type: " + selector_type)
+
+    time.sleep(3)  # Задержка в 3 секунды
+    actual_text = element.text
+    if expected_text_part in actual_text:
+        print(f"Текст '{expected_text_part}' Пристутсвует в указанном элементе.")
+    else:
+        raise AssertionError(f"Partial text '{expected_text_part}' not found in the element. Actual text: '{actual_text}'")

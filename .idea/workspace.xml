@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление обработки ошибок">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавление переменных для статусов заявок. Кастомная команда для ввода текста">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1testFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/1testFreelance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2testFreelancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/2testFreelancer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3testHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/3testHabr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4testKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/4testKwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
@@ -259,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717507494223</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Добавление переменных для статусов заявок. Кастомная команда для ввода текста">
+      <option name="closed" value="true" />
+      <created>1718012944248</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718012944248</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +287,7 @@
     <MESSAGE value="Оптимизация кода" />
     <MESSAGE value="Добавление нажатия на колокольчик" />
     <MESSAGE value="Добавление обработки ошибок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление обработки ошибок" />
+    <MESSAGE value="Добавление переменных для статусов заявок. Кастомная команда для ввода текста" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление переменных для статусов заявок. Кастомная команда для ввода текста" />
   </component>
 </project>
