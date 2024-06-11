@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import var
 
+
 expected_text_login = "Найти задание/вакансию"
 expected_unauthorized_text = "Вы не авторизованы, авторизируйтесь"
 
@@ -25,6 +26,17 @@ def navigate_and_login(driver):
 
 
 # Проверка логина
+def C3446_dzen_cyrkle_only_with_register():
+    driver = setup_driver()
+    try:
+        navigate_and_login(driver)
+        driver.get(var.urlHabrNew)
+        verify_element_not_present(driver, "ID", var.dzenCirle)
+    except NoSuchElementException as e:
+        print(f"Test C3446 failed: {e}")
+    finally:
+        driver.quit()
+
 def C3559_register_project_after_send_usp_moderate():
     driver = setup_driver()
     try:
@@ -38,7 +50,6 @@ def C3559_register_project_after_send_usp_moderate():
         print(f"Test C3559 failed: {e}")
     finally:
         driver.quit()
-
 
 def C3540_check_few_plugin_windows_open():
     driver = setup_driver()
@@ -54,19 +65,6 @@ def C3540_check_few_plugin_windows_open():
     finally:
         driver.quit()
 
-
-def C3446_dzen_cyrkle_only_with_register():
-    driver = setup_driver()
-    try:
-        navigate_and_login(driver)
-        driver.get(var.urlHabrNew)
-        verify_element_not_present(driver, "ID", var.dzenCirle)
-    except NoSuchElementException as e:
-        print(f"Test C3446 failed: {e}")
-    finally:
-        driver.quit()
-
-
 def C3447_close_dzen_form():
     driver = setup_driver()
     try:
@@ -81,7 +79,6 @@ def C3447_close_dzen_form():
     finally:
         driver.quit()
 
-
 def C3448_plane_when_register_project():
     driver = setup_driver()
     try:
@@ -94,19 +91,66 @@ def C3448_plane_when_register_project():
     finally:
         driver.quit()
 
-
-def C3449_messege_from_client():
+def C3454_clicl_on_more():
     driver = setup_driver()
     try:
         navigate_and_login(driver)
         driver.get(var.urlHabrNew)
-        # Дополнить тест
+        current_tab = driver.current_window_handle
+        click_element(driver, "ID", var.dzenCirle)
+        verify_text_in_element(driver, "CLASS_NAME", var.dzenAction, "Заявка зарегестрирована")
+        click_element(driver, "CLASS_NAME", var.dzenHistMore)
+        # Проверка что в новой вкладке открывается pm-dev.
+        # Нет проверки что открывается именно заявка, так как нет логина в РМ
+        WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))
+        for tab in driver.window_handles:
+            if tab != current_tab:
+                driver.switch_to.window(tab)
+                break
+        assert "https://v2.pm-dev.dzencode.net" in driver.current_url
+        print("Переход на новую вкладку pm-dev прошел успешно.")
     except NoSuchElementException as e:
-        print(f"Test C3449 failed: {e}")
+        print(f"Test C3454 failed: {e}")
     finally:
         driver.quit()
 
+def C3537_USP_send():
+    driver = setup_driver()
+    try:
+        navigate_and_login(driver)
+        driver.get(var.urlHabrRegMeSendUSP)
+        verify_text_in_element(driver, "XPATH", var.sentUTP, "Вы отправили УТП")
+        # тут добавить проверку в кружке дзена
+    except NoSuchElementException as e:
+        print(f"Test C3537 failed: {e}")
+    finally:
+        driver.quit()
 
+def C3455_GPT_moderate_manager():
+    driver = setup_driver()
+    try:
+        navigate_and_login(driver)
+        driver.get(var.urlHabrNew)
+        click_element(driver, "ID", var.dzenCirle)
+        click_element(driver, "CSS_SELECTOR", var.mainGPT)
+        click_element(driver, "CLASS_NAME", var.getGPT)
+
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.CLASS_NAME, var.formGPT))
+        )
+
+        form_gpt_element = driver.find_element(By.CLASS_NAME, var.formGPT)
+        form_gpt_text = form_gpt_element.text.strip()
+
+        if len(form_gpt_text) > 5 and form_gpt_text != "—":
+            print("Текст в элементе присутствует и содержит более 5 символов.")
+        else:
+            raise AssertionError("Текст в элементе отсутствует или содержит менее 5 символов.")
+
+    except NoSuchElementException as e:
+        print(f"Test C3455 failed: {e}")
+    finally:
+        driver.quit()
 
 if __name__ == "__main__":
     try:
@@ -135,6 +179,19 @@ if __name__ == "__main__":
         print(f"Error running C3448: {e}")
 
     try:
-        C3449_messege_from_client()
+        C3454_clicl_on_more()
     except Exception as e:
-        print(f"Error running C3449: {e}")
+        print(f"Error running C3454: {e}")
+
+    try:
+        C3537_USP_send()
+    except Exception as e:
+        print(f"Error running C3454: {e}")
+
+    try:
+        C3455_GPT_moderate_manager()
+    except Exception as e:
+        print(f"Error running C3454: {e}")
+
+
+

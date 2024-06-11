@@ -51,7 +51,7 @@ def login_and_waitF(driver):
     time.sleep(5)
 
 
-def click_element(driver, selector_type, selector, wait_time=10):
+def click_element(driver, selector_type, selector, wait_time=3):
     if selector_type == "ID":
         element = WebDriverWait(driver, wait_time).until(
             EC.element_to_be_clickable((By.ID, selector))
@@ -79,7 +79,7 @@ def click_element(driver, selector_type, selector, wait_time=10):
     time.sleep(2)  # Ждем 2 секунды после клика
 
 
-def enter_text(driver, selector_type, selector, text, wait_time=10):
+def enter_text(driver, selector_type, selector, text, wait_time=3):
     if selector_type == "ID":
         element = WebDriverWait(driver, wait_time).until(
             EC.element_to_be_clickable((By.ID, selector))
@@ -108,7 +108,7 @@ def enter_text(driver, selector_type, selector, text, wait_time=10):
     time.sleep(2)
 
 
-def verify_text_in_element(driver, selector_type, selector, expected_text_part, wait_time=10):
+def verify_text_in_element(driver, selector_type, selector, expected_text_part, wait_time=3):
     if selector_type == "ID":
         element = WebDriverWait(driver, wait_time).until(
             EC.presence_of_element_located((By.ID, selector))
@@ -141,7 +141,7 @@ def verify_text_in_element(driver, selector_type, selector, expected_text_part, 
             f"Partial text '{expected_text_part}' not found in the element. Actual text: '{actual_text}'")
 
 
-def verify_element_present(driver, selector_type, selector, wait_time=5):
+def verify_element_present(driver, selector_type, selector, wait_time=3):
     try:
         if selector_type == "ID":
             WebDriverWait(driver, wait_time).until(
@@ -170,67 +170,7 @@ def verify_element_present(driver, selector_type, selector, wait_time=5):
     except:
         raise AssertionError(f"Элемента {selector_type}='{selector}' нет на странице.")
 
-    def verify_element_not_present(driver, selector_type, selector, wait_time=30):
-        try:
-            if selector_type == "ID":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.ID, selector))
-                )
-            elif selector_type == "CSS_SELECTOR":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.CSS_SELECTOR, selector))
-                )
-            elif selector_type == "XPATH":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.XPATH, selector))
-                )
-            elif selector_type == "NAME":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.NAME, selector))
-                )
-            elif selector_type == "CLASS_NAME":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.CLASS_NAME, selector))
-                )
-            else:
-                raise ValueError("Unsupported selector type: " + selector_type)
-
-            print(f"Element with {selector_type}='{selector}' is not present on the page.")
-        except Exception as e:
-            print(f"Exception occurred: {e}")
-            raise AssertionError(f"Element with {selector_type}='{selector}' is present on the page.")
-
-    def verify_element_not_present(driver, selector_type, selector, wait_time=30):
-        try:
-            if selector_type == "ID":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.ID, selector))
-                )
-            elif selector_type == "CSS_SELECTOR":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.CSS_SELECTOR, selector))
-                )
-            elif selector_type == "XPATH":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.XPATH, selector))
-                )
-            elif selector_type == "NAME":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.NAME, selector))
-                )
-            elif selector_type == "CLASS_NAME":
-                WebDriverWait(driver, wait_time).until(
-                    EC.invisibility_of_element_located((By.CLASS_NAME, selector))
-                )
-            else:
-                raise ValueError("Unsupported selector type: " + selector_type)
-
-            print(f"Element with {selector_type}='{selector}' is not present on the page.")
-        except Exception as e:
-            print(f"Exception occurred: {e}")
-            raise AssertionError(f"Element with {selector_type}='{selector}' is present on the page.")
-
-def verify_element_not_present(driver, selector_type, selector, wait_time=30):
+def verify_element_not_present(driver, selector_type, selector, wait_time=3):
     try:
         if selector_type == "ID":
             WebDriverWait(driver, wait_time).until(

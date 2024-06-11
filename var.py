@@ -3,7 +3,7 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/580768" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/580914" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
@@ -25,10 +25,10 @@ urlFreelanceRegNotMeSendUSP = ""  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
 urlFreelancerNew = "" # новая
-urlFreelancerRegMe = ""  # зарегестрированна за мной
+urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = ""  # Отправил УТП я
-urlFreelancerRegNotMeSendUSP = ""  # Отправил УТП не я
+urlFreelancerRegNotMeSendUSP = "https://www.freelancer.com/projects/c-sharp-programming/Test-project-for/details"  # Отправил УТП не я
 
 # Переменные селекторов
 
