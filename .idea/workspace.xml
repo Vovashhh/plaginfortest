@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавленна кастомная команда на проверку соответвия текста в элементе">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавил тесты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3testHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/3testHabr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
@@ -274,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718018345890</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Добавил тесты">
+      <option name="closed" value="true" />
+      <created>1718084498506</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718084498506</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +306,7 @@
     <MESSAGE value="Добавление обработки ошибок" />
     <MESSAGE value="Добавление переменных для статусов заявок. Кастомная команда для ввода текста" />
     <MESSAGE value="Добавленна кастомная команда на проверку соответвия текста в элементе" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавленна кастомная команда на проверку соответвия текста в элементе" />
+    <MESSAGE value="Добавил тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил тесты" />
   </component>
 </project>

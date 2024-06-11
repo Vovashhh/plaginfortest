@@ -28,16 +28,34 @@
    ### Для запуска нажать на Run в IDE 
 
 ___
+### Блокеры:
 1. Weblancer - блокер (капча)
 
 ---
-#### Шаблон проверки с учетом логина
+### Шаблон проверки с учетом логина
 ```sh
 def name_check():
-    with setup_driver() as driver:
+driver = setup_driver()
+    try:
         navigate_and_login(driver)
+        driver.get(var.urlHabrNew)
+        #тут проверка
+    except NoSuchElementException as e:
+        print(f"Test № failed: {e}")
+    finally:
+        driver.quit()
 #Проверка 
 ```
+### Конструкция для запуска тестов в случае их провала 
+
+```sh 
+if __name__ == "__main__":
+    try:
+        C3446_dzen_cyrkle_only_with_register()
+    except Exception as e:
+        print(f"Error running C3446: {e}")
+```
+
 
 #### Использование команды для ввода текста
 <code>
@@ -52,4 +70,14 @@ def name_check():
 #### Использование команды для проверки формы на соответсвие
 <code>
     verify_text_in_element(driver, "XPATH", var.regProjByMe, "Тут текст")
+</code>
+
+#### Использование команды для проверки что элемент пристутсвует на странице
+<code>
+      verify_element_present(driver, "CLASS_NAME", var.dzenHistoryTab)
+</code>
+
+#### Использование команды для проверки что элемент отсутсвует на странице
+<code>
+      verify_element_not_present(driver, "ID", var.uspModeration)
 </code>

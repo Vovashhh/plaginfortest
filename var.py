@@ -3,7 +3,7 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/580756" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/580768" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
