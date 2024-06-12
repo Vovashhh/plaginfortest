@@ -14,7 +14,7 @@ urlKworkNew = "" #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = ""  # Отправил УТП я
-urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2463017/view"  # Отправил УТП не я
+urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
 urlFreelanceNew = "" # новая
