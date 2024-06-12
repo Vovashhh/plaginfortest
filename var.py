@@ -3,7 +3,7 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/580914" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/581046" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
@@ -82,6 +82,8 @@ copyGPT = "copy-icon"
 getGPT = "plugin-gpt-bottom-btn"
 # Вкладка Информация XPATH
 dzenInfo = "//div[contains(@class, 'plugin-info-button-tab') and text()='Информация']"
+# форма информации о статусе заявки
+dzenInfoForm = "/html/body/div[7]/div[2]/div[1]/div"
 # Информация о клиенте ID
 clientInfoBtn = "plugin-client-info"
 # Клиент CLASS_NAME
@@ -122,3 +124,6 @@ msgSendModerate = "btn-moderation-primary-send"
 msdCancel = "btn-moderation-primary-close"
 # Форма сообщения ID
 msgForm = "plugin-message-textarea"
+# Палец вверх ID
+msgThumbUp = "btn-message-without-answer"
+

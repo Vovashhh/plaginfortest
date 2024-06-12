@@ -152,46 +152,64 @@ def C3455_GPT_moderate_manager():
     finally:
         driver.quit()
 
+def C3460_whithout_deal():
+    driver = setup_driver()
+    try:
+        navigate_and_login(driver)
+        driver.get(var.urlHabrNew)
+        click_element(driver, "ID", var.dzenCirle)
+        click_element(driver, "XPATH", var.dzenInfo)
+        verify_text_in_element(driver, "XPATH", var.dzenInfoForm, "Сделка еще не создана")
+
+    except NoSuchElementException as e:
+        print(f"Test C3460 failed: {e}")
+    finally:
+        driver.quit()
+
 if __name__ == "__main__":
-    try:
-        C3446_dzen_cyrkle_only_with_register()
-    except Exception as e:
-        print(f"Error running C3446: {e}")
+    # try:
+    #     C3446_dzen_cyrkle_only_with_register()
+    # except Exception as e:
+    #     print(f"Error running C3446: {e}")
+    #
+    # try:
+    #     C3559_register_project_after_send_usp_moderate()
+    # except Exception as e:
+    #     print(f"Error running C3559: {e}")
+    #
+    # try:
+    #     C3540_check_few_plugin_windows_open()
+    # except Exception as e:
+    #     print(f"Error running C3540: {e}")
+    #
+    # try:
+    #     C3447_close_dzen_form()
+    # except Exception as e:
+    #     print(f"Error running C3447: {e}")
+    #
+    # try:
+    #     C3448_plane_when_register_project()
+    # except Exception as e:
+    #     print(f"Error running C3448: {e}")
+    #
+    # try:
+    #     C3454_clicl_on_more()
+    # except Exception as e:
+    #     print(f"Error running C3454: {e}")
+    #
+    # try:
+    #     C3537_USP_send()
+    # except Exception as e:
+    #     print(f"Error running C3537: {e}")
+    #
+    # try:
+    #     C3455_GPT_moderate_manager()
+    # except Exception as e:
+    #     print(f"Error running C3455: {e}")
 
     try:
-        C3559_register_project_after_send_usp_moderate()
+        C3460_whithout_deal()
     except Exception as e:
-        print(f"Error running C3559: {e}")
-
-    try:
-        C3540_check_few_plugin_windows_open()
-    except Exception as e:
-        print(f"Error running C3540: {e}")
-
-    try:
-        C3447_close_dzen_form()
-    except Exception as e:
-        print(f"Error running C3447: {e}")
-
-    try:
-        C3448_plane_when_register_project()
-    except Exception as e:
-        print(f"Error running C3448: {e}")
-
-    try:
-        C3454_clicl_on_more()
-    except Exception as e:
-        print(f"Error running C3454: {e}")
-
-    try:
-        C3537_USP_send()
-    except Exception as e:
-        print(f"Error running C3454: {e}")
-
-    try:
-        C3455_GPT_moderate_manager()
-    except Exception as e:
-        print(f"Error running C3454: {e}")
-
+        print(f"Error running C3460: {e}")
 
 
