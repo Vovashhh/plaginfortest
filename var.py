@@ -3,7 +3,7 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/581046" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/581332" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
@@ -18,10 +18,10 @@ urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отпра
 
 urlFreelance = "https://freelance.ru/"
 urlFreelanceNew = "" # новая
-urlFreelanceRegMe = ""  # зарегестрированна за мной
+urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
 urlFreelanceRegMeSendUSP = ""  # Отправил УТП я
-urlFreelanceRegNotMeSendUSP = ""  # Отправил УТП не я
+urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
 urlFreelancerNew = "" # новая
@@ -31,6 +31,8 @@ urlFreelancerRegMeSendUSP = ""  # Отправил УТП я
 urlFreelancerRegNotMeSendUSP = "https://www.freelancer.com/projects/c-sharp-programming/Test-project-for/details"  # Отправил УТП не я
 
 # Переменные селекторов
+
+btnCompany = "//select/option[2]"
 
 # Автовход XPATH
 autoLogin = "//button[contains(text(), 'Автовход') and not(contains(text(), 'по сессии'))]"
