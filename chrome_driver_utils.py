@@ -1,5 +1,6 @@
 import os
 from selenium import webdriver
+from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -49,6 +50,39 @@ def login_and_waitF(driver):
     auto_enter_button.click()
 
     time.sleep(5)
+
+def login_and_wait_via_session_forFreelance(driver):
+    try:
+        # Пробуем войти через автовход по сессии
+        login_button = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.LINK_TEXT, "Вход"))
+        )
+        login_button.click()
+        time.sleep(2)
+        # Клик по автовходу по сессии
+        login_button_sess = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Автовход по сессии')]"))
+        )
+        login_button_sess.click()
+        time.sleep(5)
+    except (NoSuchElementException, TimeoutException):
+        # Если не получилось, пробуем обычный автовход
+        try:
+            login_button = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.LINK_TEXT, "Вход"))
+            )
+            login_button.click()
+
+            # Ждем, пока кнопка "auto-enter-fixed" не станет кликабельной
+            auto_enter_button = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable((By.CLASS_NAME, "auto-enter-fixed"))
+            )
+
+            # Кликаем на кнопку "auto-enter-fixed"
+            auto_enter_button.click()
+            time.sleep(5)
+        except (NoSuchElementException, TimeoutException) as e:
+            print(f"Login via session failed: {e}")
 
 
 def click_element(driver, selector_type, selector, wait_time=3):

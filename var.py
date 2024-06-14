@@ -3,28 +3,28 @@
 pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/581332" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/581436" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = "" #
+urlKworkNew = "https://kwork.ru/projects/2485258/view" #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
-urlKworkRegMeSendUSP = ""  # Отправил УТП я
+urlKworkRegMeSendUSP = "https://kwork.ru/projects/2445384/view"  # Отправил УТП я
 urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = "" # новая
+urlFreelanceNew = "https://freelance.ru/projects/pridumat-nazvanie-i-logotip-1578460.html" # новая
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
-urlFreelanceRegMeSendUSP = ""  # Отправил УТП я
+urlFreelanceRegMeSendUSP = "https://freelance.ru/projects/sdelat-portfolio-dlya-nok-norpriz-1578473.html"  # Отправил УТП я
 urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
-urlFreelancerNew = "" # новая
+urlFreelancerNew = "https://www.freelancer.com/projects/php/Expert-Needed-for-Multilingual-Blog/details" # новая
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = ""  # Отправил УТП я
@@ -85,7 +85,9 @@ getGPT = "plugin-gpt-bottom-btn"
 # Вкладка Информация XPATH
 dzenInfo = "//div[contains(@class, 'plugin-info-button-tab') and text()='Информация']"
 # форма информации о статусе заявки
-dzenInfoForm = "/html/body/div[7]/div[2]/div[1]/div"
+dzenInfoFormHarb = "/html/body/div[7]/div[2]/div[1]/div"
+#CLASS_NAME
+dzenInfoKwork = "plugin-project-content-modal-body"
 # Информация о клиенте ID
 clientInfoBtn = "plugin-client-info"
 # Клиент CLASS_NAME

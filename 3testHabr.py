@@ -35,7 +35,7 @@ def C3446_dzen_cyrkle_only_with_register():
         driver.get(var.urlHabrNew)
         verify_element_not_present(driver, "ID", var.dzenCirle)
 
-        print(Fore.GREEN + "Кейс C3446 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3446 успешно выполнен. - Кружок dzenCode тображается только на зарегестрированном проэкте" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3446 failed: {e}")
@@ -52,7 +52,7 @@ def C3559_register_project_after_send_usp_moderate():
         click_element(driver, "CLASS_NAME", var.uspSend)
         verify_text_in_element(driver, "XPATH", var.regProjByMe, "Вы зарегистрировали проект")
 
-        print(Fore.GREEN + "Кейс C3559 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3559 успешно выполнен. Проэкт зарегестрирован после отправки УТП на модерацию" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3559 failed: {e}")
@@ -69,7 +69,7 @@ def C3540_check_few_plugin_windows_open():
         verify_element_present(driver, "CLASS_NAME", var.bellForm)
         verify_element_present(driver, "CLASS_NAME", var.dzenHistoryTab)
 
-        print(Fore.GREEN + "Кейс C3540 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3540 успешно выполнен. - Можно открыть несколько окон" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3540 failed: {e}")
@@ -86,7 +86,7 @@ def C3447_close_dzen_form():
         click_element(driver, "ID", var.dzenCirle)
         verify_element_not_present(driver, "ID", var.dzenHistoryTab)
 
-        print(Fore.GREEN + "Кейс C3447 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3447 успешно выполнен. - Можно закрыть форму dzenCode" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3447 failed: {e}")
@@ -101,7 +101,7 @@ def C3448_plane_when_register_project():
         click_element(driver, "ID", var.dzenCirle)
         verify_text_in_element(driver, "CLASS_NAME", var.dzenAction, "Заявка зарегестрирована")
 
-        print(Fore.GREEN + "Кейс C3448 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3448 успешно выполнен.- В истории отображается информация о регистрации проэкта" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3448 failed: {e}")
@@ -126,7 +126,7 @@ def C3454_clicl_on_more():
                 break
         assert "https://v2.pm-dev.dzencode.net" in driver.current_url
         print("Переход на новую вкладку pm-dev прошел успешно.")
-        print(Fore.GREEN + "Кейс C3454 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3454 успешно выполнен. - При нажатии на подробнее, происходит переход в РМ" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3454 failed: {e}")
@@ -141,7 +141,7 @@ def C3537_USP_send():
         verify_text_in_element(driver, "XPATH", var.sentUTP, "Вы отправили УТП")
         # тут добавить проверку в кружке дзена
 
-        print(Fore.GREEN + "Кейс C3537 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3537 успешно выполнен. - Отображается текст об отправке УТП" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3537 failed: {e}")
@@ -169,7 +169,7 @@ def C3455_GPT_moderate_manager():
         else:
             raise AssertionError("Текст в элементе отсутствует или содержит менее 5 символов.")
 
-        print(Fore.GREEN + "Кейс C3455 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3455 успешно выполнен. Ответ сгенерирован менеджером" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3455 failed: {e}")
@@ -198,7 +198,7 @@ def C3456_GPT_moderate_company():
         else:
             raise AssertionError("Текст в элементе отсутствует или содержит менее 5 символов.")
 
-        print(Fore.GREEN + "Кейс C3456 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3456 успешно выполнен. Ответ компании сгенерирован" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3455 failed: {e}")
@@ -214,7 +214,7 @@ def C3459_copy_GPT():
         click_element(driver, "CSS_SELECTOR", var.mainGPT)
         click_element(driver, "CLASS_NAME", var.copyGPT)
 
-        form_gpt_element = driver.find_element(By.XPATH, "/html/body/div[7]/div[2]/div[1]/div/div[1]")
+        form_gpt_element = driver.find_element(By.CLASS_NAME, var.formGPT)
         form_gpt_text = form_gpt_element.text.replace('\n', '').replace(' ', '')
 
         clipboard_text = pyperclip.paste().replace('\n', '').replace(' ', '')
@@ -224,7 +224,7 @@ def C3459_copy_GPT():
         else:
             print("Скопированный текст не совпадает.")
 
-        print(Fore.GREEN + "Кейс C3459 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3459 успешно выполнен. Ответ скопирован" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3459 failed: {e}")
@@ -238,9 +238,9 @@ def C3460_whithout_deal():
         driver.get(var.urlHabrNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "XPATH", var.dzenInfo)
-        verify_text_in_element(driver, "XPATH", var.dzenInfoForm, "Сделка еще не создана")
+        verify_text_in_element(driver, "XPATH", var.dzenInfoFormHarb, "Сделка еще не создана")
 
-        print(Fore.GREEN + "Кейс C3460 успешно выполнен." + Style.RESET_ALL)
+        print(Fore.GREEN + "Кейс C3460 успешно выполнен. - В информации нет сделки" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3460 failed: {e}")
