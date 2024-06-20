@@ -31,10 +31,8 @@ def navigate_and_login(driver):
 
 
 # Проверка логина
-def C3446_dzen_cyrkle_only_with_register():
-    driver = setup_driver()
+def C3446_dzen_cyrkle_only_with_register(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         verify_element_not_present(driver, "ID", var.dzenCirle)
 
@@ -42,13 +40,10 @@ def C3446_dzen_cyrkle_only_with_register():
 
     except NoSuchElementException as e:
         print(f"Test C3446 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3559_register_project_after_send_usp_moderate():
-    driver = setup_driver()
+def C3559_register_project_after_send_usp_moderate(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.uspModeration)
         enter_text(driver, "ID", var.uspForm, " Тест авто Владимир")
@@ -59,13 +54,10 @@ def C3559_register_project_after_send_usp_moderate():
 
     except NoSuchElementException as e:
         print(f"Test C3559 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3540_check_few_plugin_windows_open():
-    driver = setup_driver()
+def C3540_check_few_plugin_windows_open(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "CSS_SELECTOR", var.alertBellBut)
@@ -76,13 +68,10 @@ def C3540_check_few_plugin_windows_open():
 
     except NoSuchElementException as e:
         print(f"Test C3540 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3447_close_dzen_form():
-    driver = setup_driver()
+def C3447_close_dzen_form(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         verify_element_present(driver, "CLASS_NAME", var.dzenHistoryTab)
@@ -93,13 +82,10 @@ def C3447_close_dzen_form():
 
     except NoSuchElementException as e:
         print(f"Test C3447 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3448_plane_when_register_project():
-    driver = setup_driver()
+def C3448_plane_when_register_project(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         verify_text_in_element(driver, "CLASS_NAME", var.dzenAction, "Заявка зарегестрирована")
@@ -108,13 +94,10 @@ def C3448_plane_when_register_project():
 
     except NoSuchElementException as e:
         print(f"Test C3448 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3454_clicl_on_more():
-    driver = setup_driver()
+def C3454_clicl_on_more(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         current_tab = driver.current_window_handle
         click_element(driver, "ID", var.dzenCirle)
@@ -133,13 +116,10 @@ def C3454_clicl_on_more():
 
     except NoSuchElementException as e:
         print(f"Test C3454 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3537_USP_send():
-    driver = setup_driver()
+def C3537_USP_send(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceRegMeSendUSP)
         verify_text_in_element(driver, "XPATH", var.sentUTP, "Вы отправили УТП")
         # тут добавить проверку в кружке дзена
@@ -148,13 +128,10 @@ def C3537_USP_send():
 
     except NoSuchElementException as e:
         print(f"Test C3537 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3455_GPT_moderate_manager():
-    driver = setup_driver()
+def C3455_GPT_moderate_manager(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "CSS_SELECTOR", var.mainGPT)
@@ -176,13 +153,10 @@ def C3455_GPT_moderate_manager():
 
     except NoSuchElementException as e:
         print(f"Test C3455 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3456_GPT_moderate_company():
-    driver = setup_driver()
+def C3456_GPT_moderate_company(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "CSS_SELECTOR", var.mainGPT)
@@ -205,13 +179,10 @@ def C3456_GPT_moderate_company():
 
     except NoSuchElementException as e:
         print(f"Test C3455 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3459_copy_GPT():
-    driver = setup_driver()
+def C3459_copy_GPT(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "CSS_SELECTOR", var.mainGPT)
@@ -231,13 +202,10 @@ def C3459_copy_GPT():
 
     except NoSuchElementException as e:
         print(f"Test C3459 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3460_whithout_deal():
-    driver = setup_driver()
+def C3460_whithout_deal(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlFreelanceNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "XPATH", var.dzenInfo)
@@ -251,59 +219,93 @@ def C3460_whithout_deal():
         driver.quit()
 
 if __name__ == "__main__":
+    driver = None
     try:
-        C3446_dzen_cyrkle_only_with_register()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3446_dzen_cyrkle_only_with_register(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
 
     try:
-        C3559_register_project_after_send_usp_moderate()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3559_register_project_after_send_usp_moderate(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
 
     try:
-        C3540_check_few_plugin_windows_open()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3540_check_few_plugin_windows_open(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
 
     try:
-        C3447_close_dzen_form()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3447_close_dzen_form(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3447: {e}" + Style.RESET_ALL)
 
     try:
-        C3448_plane_when_register_project()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3448_plane_when_register_project(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3448: {e}" + Style.RESET_ALL)
 
     try:
-        C3454_clicl_on_more()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3454_clicl_on_more(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3454: {e}" + Style.RESET_ALL)
 
     try:
-        C3537_USP_send()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3537_USP_send(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3537: {e}" + Style.RESET_ALL)
 
     try:
-        C3455_GPT_moderate_manager()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3455_GPT_moderate_manager(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3455: {e}" + Style.RESET_ALL)
 
     try:
-        C3456_GPT_moderate_company()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3456_GPT_moderate_company(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3456: {e}" + Style.RESET_ALL)
 
     try:
-        C3460_whithout_deal()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
-
-    try:
-        C3459_copy_GPT()
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3459_copy_GPT(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3459: {e}" + Style.RESET_ALL)
+
+    try:
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3460_whithout_deal(driver)
+    except Exception as e:
+        print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
 
 
