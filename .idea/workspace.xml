@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="+ переменная">
+      <change afterPath="$PROJECT_DIR$/testAuto5.1(HABR).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1testFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/1testFreelance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2testFreelancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/2testFreelancer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3testHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/3testHabr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4testKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/4testKwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,34 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests in enterFreelance.py.executor": "Run",
-    "Python tests.Python tests in enterFreelancer.py.executor": "Run",
-    "Python tests.Python tests in enterHabr.py.executor": "Run",
-    "Python tests.Python tests in enterKwork.py.executor": "Run",
-    "Python tests.Python tests in enterWeblancer.py.executor": "Run",
-    "Python tests.Python tests in test.py.executor": "Run",
-    "Python.1enterFreelance.executor": "Run",
-    "Python.1testFreelance.executor": "Run",
-    "Python.2enterFreelancer.executor": "Run",
-    "Python.2testFreelancer.executor": "Run",
-    "Python.3testHabr.executor": "Run",
-    "Python.4testKwork.executor": "Run",
-    "Python.chrome_driver_utils.executor": "Run",
-    "Python.enterFreelance.executor": "Run",
-    "Python.enterHabr.executor": "Run",
-    "Python.enterKwork.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.var.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/crm.28540/Desktop/plaginfortest",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in enterFreelance.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterFreelancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterHabr.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterKwork.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterWeblancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1testFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2enterFreelancer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2testFreelancer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3testHabr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4testKwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chrome_driver_utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterHabr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterKwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.var.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/crm.28540/Desktop/plaginfortest&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\crm.28540\Desktop\SeleniumTest" />

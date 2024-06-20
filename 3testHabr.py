@@ -1,4 +1,4 @@
-#import time
+import time
 from selenium.common.exceptions import NoSuchElementException
 #from selenium import webdriver
 from chrome_driver_utils import verify_element_not_present, verify_element_present, chrome_with_extension, \
@@ -260,7 +260,7 @@ if __name__ == "__main__":
         if driver is None:
             driver = setup_driver()
             navigate_and_login(driver)
-        C3446_dzen_cyrkle_only_with_register()
+        C3446_dzen_cyrkle_only_with_register(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
 
@@ -268,7 +268,7 @@ if __name__ == "__main__":
         if driver is None:
             driver = setup_driver()
             navigate_and_login(driver)
-        C3559_register_project_after_send_usp_moderate()
+        C3559_register_project_after_send_usp_moderate(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
 
@@ -276,7 +276,7 @@ if __name__ == "__main__":
         if driver is None:
             driver = setup_driver()
             navigate_and_login(driver)
-        C3540_check_few_plugin_windows_open()
+        C3540_check_few_plugin_windows_open(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
 
