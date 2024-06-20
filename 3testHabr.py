@@ -51,13 +51,10 @@ def C3559_register_project_after_send_usp_moderate(driver):
 
     except NoSuchElementException as e:
         print(f"Test C3559 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3540_check_few_plugin_windows_open():
-    driver = setup_driver()
+def C3540_check_few_plugin_windows_open(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlHabrNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "CSS_SELECTOR", var.alertBellBut)
@@ -68,8 +65,7 @@ def C3540_check_few_plugin_windows_open():
 
     except NoSuchElementException as e:
         print(f"Test C3540 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
 def C3447_close_dzen_form():
     driver = setup_driver()
@@ -259,21 +255,31 @@ def C3460_whithout_deal():
 
 
 if __name__ == "__main__":
-    # try:
-    #     C3446_dzen_cyrkle_only_with_register()
-    # except Exception as e:
-    #     print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
-    #
-    # try:
-    #     C3559_register_project_after_send_usp_moderate()
-    # except Exception as e:
-    #     print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
-    #
-    # try:
-    #     C3540_check_few_plugin_windows_open()
-    # except Exception as e:
-    #     print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
-    #
+    driver = None
+    try:
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3446_dzen_cyrkle_only_with_register()
+    except Exception as e:
+        print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
+
+    try:
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3559_register_project_after_send_usp_moderate()
+    except Exception as e:
+        print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
+
+    try:
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3540_check_few_plugin_windows_open()
+    except Exception as e:
+        print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
+
     # try:
     #     C3447_close_dzen_form()
     # except Exception as e:
@@ -303,11 +309,11 @@ if __name__ == "__main__":
     #     C3456_GPT_moderate_company()
     # except Exception as e:
     #     print(Fore.RED + f"Error running C3456: {e}" + Style.RESET_ALL)
-
-    try:
-        C3460_whithout_deal()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3460_whithout_deal()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
     #
     # try:
     #     C3459_copy_GPT()
