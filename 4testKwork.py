@@ -600,7 +600,7 @@ if __name__ == "__main__":
         C3460_whithout_deal(driver)
     except Exception as e:
         print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
-
+    driver = None
     try:
         C3538_auto_enter()
     except Exception as e:
