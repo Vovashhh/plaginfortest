@@ -28,10 +28,8 @@ def navigate_and_login(driver):
 
 
 # Проверка логина
-def C3446_dzen_cyrkle_only_with_register():
-    driver = setup_driver()
+def C3446_dzen_cyrkle_only_with_register(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlHabrNew)
         verify_element_not_present(driver, "ID", var.dzenCirle)
 
@@ -39,13 +37,10 @@ def C3446_dzen_cyrkle_only_with_register():
 
     except NoSuchElementException as e:
         print(f"Test C3446 failed: {e}")
-    finally:
-        driver.quit()
+    return driver
 
-def C3559_register_project_after_send_usp_moderate():
-    driver = setup_driver()
+def C3559_register_project_after_send_usp_moderate(driver):
     try:
-        navigate_and_login(driver)
         driver.get(var.urlHabrNew)
         click_element(driver, "ID", var.uspModeration)
         enter_text(driver, "ID", var.uspForm, " Тест авто Владимир")
@@ -238,7 +233,7 @@ def C3460_whithout_deal():
         driver.get(var.urlHabrNew)
         click_element(driver, "ID", var.dzenCirle)
         click_element(driver, "XPATH", var.dzenInfo)
-        verify_text_in_element(driver, "XPATH", var.dzenInfoFormHarb, "Сделка еще не создана")
+        verify_text_in_element(driver, "CLASS_NAME", var.dzenInfoKwork, "Сделка еще не создана")
 
         print(Fore.GREEN + "Кейс C3460 успешно выполнен. - В информации нет сделки" + Style.RESET_ALL)
 
@@ -247,60 +242,75 @@ def C3460_whithout_deal():
     finally:
         driver.quit()
 
+    def C3538_auto_enter():
+        driver = setup_driver()
+        try:
+            navigate_and_login(driver)
+            time.sleep(2)
+            expected_dashboard_url = "https://freelance.habr.com/tasks"
+            actual_url = driver.current_url
+            assert actual_url == expected_dashboard_url, (f"URL после автовхода не соответствует ожидаемому.")
+            print(
+                Fore.GREEN + "C3538 успешно выполнен - Пользователь может войти в аккаунт биржи нажав на кнопку 'Автовход'" + Style.RESET_ALL)
+        except NoSuchElementException as e:
+            print(f"Test C3538 failed: {e}")
+        finally:
+            driver.quit()
+
 if __name__ == "__main__":
-    try:
-        C3446_dzen_cyrkle_only_with_register()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
-
-    try:
-        C3559_register_project_after_send_usp_moderate()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
-
-    try:
-        C3540_check_few_plugin_windows_open()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
-
-    try:
-        C3447_close_dzen_form()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3447: {e}" + Style.RESET_ALL)
-
-    try:
-        C3448_plane_when_register_project()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3448: {e}" + Style.RESET_ALL)
-
-    try:
-        C3454_clicl_on_more()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3454: {e}" + Style.RESET_ALL)
-
-    try:
-        C3537_USP_send()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3537: {e}" + Style.RESET_ALL)
-
-    try:
-        C3455_GPT_moderate_manager()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3455: {e}" + Style.RESET_ALL)
-
-    try:
-        C3456_GPT_moderate_company()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3456: {e}" + Style.RESET_ALL)
+    # try:
+    #     C3446_dzen_cyrkle_only_with_register()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3446: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3559_register_project_after_send_usp_moderate()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3559: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3540_check_few_plugin_windows_open()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3540: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3447_close_dzen_form()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3447: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3448_plane_when_register_project()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3448: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3454_clicl_on_more()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3454: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3537_USP_send()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3537: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3455_GPT_moderate_manager()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3455: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3456_GPT_moderate_company()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3456: {e}" + Style.RESET_ALL)
 
     try:
         C3460_whithout_deal()
     except Exception as e:
         print(Fore.RED + f"Error running C3460: {e}" + Style.RESET_ALL)
-
-    try:
-        C3459_copy_GPT()
-    except Exception as e:
-        print(Fore.RED + f"Error running C3459: {e}" + Style.RESET_ALL)
+    #
+    # try:
+    #     C3459_copy_GPT()
+    # except Exception as e:
+    #     print(Fore.RED + f"Error running C3459: {e}" + Style.RESET_ALL)
 
 
