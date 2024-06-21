@@ -3,28 +3,28 @@
 pathToPlagin = "/Users/max/Downloads/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/582538" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/582712" # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = "https://kwork.ru/projects/2491304/view" #
+urlKworkNew = "https://kwork.ru/projects/2492302/view" #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = "https://kwork.ru/projects/2445384/view"  # Отправил УТП я
 urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = "https://freelance.ru/projects/proekt-bani-iz-brusa-5h5-5m-1579609.html" # новая
+urlFreelanceNew = "https://freelance.ru/projects/kopirajter-dlya-napisaniya-scenariev-razlichnih-statej-dlya-prodvizheniya-1579756.html" # новая
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
 urlFreelanceRegMeSendUSP = "https://freelance.ru/projects/sdelat-portfolio-dlya-nok-norpriz-1578473.html"  # Отправил УТП я
 urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
-urlFreelancerNew = "https://www.freelancer.com/projects/website-design/User-Engaging-React-Website-with/details" # новая
+urlFreelancerNew = "https://www.freelancer.com/projects/javascript/Urgent-Matter-Javascript-Code-Error/details" # новая
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = "https://www.freelancer.com/projects/website-design/Custom-Landing-Page-Design/details"  # Отправил УТП я
