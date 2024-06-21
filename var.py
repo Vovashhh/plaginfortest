@@ -1,30 +1,30 @@
 # Стоит ли переделывать переменные под словарь ...
 
-pathToPlagin = "/Users/max/Downloads/USP_Plugin"
+pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/582712" # новая
+urlHabrNew = "https://freelance.habr.com/tasks/582802"  # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = "https://kwork.ru/projects/2492302/view" #
+urlKworkNew = "https://kwork.ru/projects/2492775/view"  #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = "https://kwork.ru/projects/2445384/view"  # Отправил УТП я
 urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = "https://freelance.ru/projects/kopirajter-dlya-napisaniya-scenariev-razlichnih-statej-dlya-prodvizheniya-1579756.html" # новая
+urlFreelanceNew = "https://freelance.ru/projects/nastroit-target-v-vk-arenda-fotostudii-1579813.html"  # новая
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
 urlFreelanceRegMeSendUSP = "https://freelance.ru/projects/sdelat-portfolio-dlya-nok-norpriz-1578473.html"  # Отправил УТП я
 urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
-urlFreelancerNew = "https://www.freelancer.com/projects/javascript/Urgent-Matter-Javascript-Code-Error/details" # новая
+urlFreelancerNew = "https://www.freelancer.com/projects/c-sharp-programming/Custom-PDF-Generation-Class/details?lang=uk&ngsw-bypass="  # новая
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = "https://www.freelancer.com/projects/website-design/Custom-Landing-Page-Design/details"  # Отправил УТП я
@@ -86,7 +86,7 @@ getGPT = "plugin-gpt-bottom-btn"
 dzenInfo = "//div[contains(@class, 'plugin-info-button-tab') and text()='Информация']"
 # форма информации о статусе заявки
 dzenInfoFormHarb = "/html/body/div[7]/div[2]/div[1]/div"
-#CLASS_NAME
+# CLASS_NAME
 dzenInfoKwork = "plugin-project-content-modal-body"
 # Информация о клиенте ID
 clientInfoBtn = "plugin-client-info"
@@ -130,4 +130,3 @@ msdCancel = "btn-moderation-primary-close"
 msgForm = "plugin-message-textarea"
 # Палец вверх ID
 msgThumbUp = "btn-message-without-answer"
-

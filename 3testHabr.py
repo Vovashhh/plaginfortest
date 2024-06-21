@@ -1,6 +1,6 @@
 import time
 from selenium.common.exceptions import NoSuchElementException
-#from selenium import webdriver
+# from selenium import webdriver
 from chrome_driver_utils import verify_element_not_present, verify_element_present, chrome_with_extension, \
     login_and_wait, click_element, enter_text, verify_text_in_element
 from selenium.webdriver.common.by import By
@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import var
 import pyperclip
 from colorama import init, Fore, Style
-
 
 expected_text_login = "Найти задание/вакансию"
 expected_unauthorized_text = "Вы не авторизованы, авторизируйтесь"
@@ -33,11 +32,13 @@ def C3446_dzen_cyrkle_only_with_register(driver):
         driver.get(var.urlHabrNew)
         verify_element_not_present(driver, "ID", var.dzenCirle)
 
-        print(Fore.GREEN + "Кейс C3446 успешно выполнен. - Кружок dzenCode тображается только на зарегестрированном проэкте" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "Кейс C3446 успешно выполнен. - Кружок dzenCode тображается только на зарегестрированном проэкте" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3446 failed: {e}")
     return driver
+
 
 def C3559_register_project_after_send_usp_moderate(driver):
     try:
@@ -47,11 +48,13 @@ def C3559_register_project_after_send_usp_moderate(driver):
         click_element(driver, "CLASS_NAME", var.uspSend)
         verify_text_in_element(driver, "XPATH", var.regProjByMe, "Вы зарегистрировали проект")
 
-        print(Fore.GREEN + "Кейс C3559 успешно выполнен. Проэкт зарегестрирован после отправки УТП на модерацию" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "Кейс C3559 успешно выполнен. Проэкт зарегестрирован после отправки УТП на модерацию" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3559 failed: {e}")
     return driver
+
 
 def C3540_check_few_plugin_windows_open(driver):
     try:
@@ -67,6 +70,7 @@ def C3540_check_few_plugin_windows_open(driver):
         print(f"Test C3540 failed: {e}")
     return driver
 
+
 def C3447_close_dzen_form(driver):
     try:
         driver.get(var.urlHabrNew)
@@ -81,17 +85,20 @@ def C3447_close_dzen_form(driver):
         print(f"Test C3447 failed: {e}")
     return driver
 
+
 def C3448_plane_when_register_project(driver):
     try:
         driver.get(var.urlHabrNew)
         click_element(driver, "ID", var.dzenCirle)
         verify_text_in_element(driver, "CLASS_NAME", var.dzenAction, "Заявка зарегестрирована")
 
-        print(Fore.GREEN + "Кейс C3448 успешно выполнен.- В истории отображается информация о регистрации проэкта" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "Кейс C3448 успешно выполнен.- В истории отображается информация о регистрации проэкта" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3448 failed: {e}")
     return driver
+
 
 def C3454_clicl_on_more(driver):
     try:
@@ -109,11 +116,13 @@ def C3454_clicl_on_more(driver):
                 break
         assert "https://v2.pm-dev.dzencode.net" in driver.current_url
         print("Переход на новую вкладку pm-dev прошел успешно.")
-        print(Fore.GREEN + "Кейс C3454 успешно выполнен. - При нажатии на подробнее, происходит переход в РМ" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "Кейс C3454 успешно выполнен. - При нажатии на подробнее, происходит переход в РМ" + Style.RESET_ALL)
 
     except NoSuchElementException as e:
         print(f"Test C3454 failed: {e}")
     return driver
+
 
 def C3537_USP_send(driver):
     try:
@@ -126,6 +135,7 @@ def C3537_USP_send(driver):
     except NoSuchElementException as e:
         print(f"Test C3537 failed: {e}")
     return driver
+
 
 def C3455_GPT_moderate_manager(driver):
     try:
@@ -151,6 +161,7 @@ def C3455_GPT_moderate_manager(driver):
     except NoSuchElementException as e:
         print(f"Test C3455 failed: {e}")
     return driver
+
 
 def C3456_GPT_moderate_company(driver):
     try:
@@ -178,6 +189,7 @@ def C3456_GPT_moderate_company(driver):
         print(f"Test C3455 failed: {e}")
     return driver
 
+
 def C3459_copy_GPT(driver):
     try:
         driver.get(var.urlHabrNew)
@@ -201,6 +213,7 @@ def C3459_copy_GPT(driver):
         print(f"Test C3459 failed: {e}")
     return driver
 
+
 def C3460_whithout_deal(driver):
     try:
         driver.get(var.urlHabrNew)
@@ -215,6 +228,7 @@ def C3460_whithout_deal(driver):
     finally:
         driver.quit()
 
+
 def C3538_auto_enter():
     driver = setup_driver()
     try:
@@ -223,11 +237,14 @@ def C3538_auto_enter():
         expected_dashboard_url = "https://freelance.habr.com/tasks"
         actual_url = driver.current_url
         assert actual_url == expected_dashboard_url, (f"URL после автовхода не соответствует ожидаемому.")
-        print(Fore.GREEN + "C3538 успешно выполнен - Пользователь может войти в аккаунт биржи нажав на кнопку 'Автовход'" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3538 успешно выполнен - Пользователь может войти в аккаунт биржи нажав на кнопку 'Автовход'" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3538 failed: {e}")
     finally:
         driver.quit()
+
+
 # Тест - Автовход по сессии
 def C3539_auto_enter_session():
     driver = setup_driver()
@@ -247,75 +264,96 @@ def C3539_auto_enter_session():
         expected_dashboard_url = "https://freelance.habr.com/tasks"
         actual_url = driver.current_url
         assert actual_url == expected_dashboard_url, (f"URL после автовхода не соответствует ожидаемому.")
-        print(Fore.GREEN + "C3539 успешно выполнен - Пользователь может войти в аккаунт биржи нажав на кнопку 'Автовход по сессии'" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3539 успешно выполнен - Пользователь может войти в аккаунт биржи нажав на кнопку 'Автовход по сессии'" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3539 failed: {e}")
     finally:
         driver.quit()
+
+
 # Тест - При нажатии на колокольчик открывается панель уведомлений
 def C3482_notification_open(driver):
     try:
         driver.get(var.urlHabrRegMe)
-        #Открытие колокольчика
+        # Открытие колокольчика
         click_element(driver, "CSS_SELECTOR", var.alertBellBut)
-        #Проверка наличия панели уведомлений
+        # Проверка наличия панели уведомлений
         verify_element_present(driver, "CLASS_NAME", var.bellForm)
         # Закрытие колокольчик
         click_element(driver, "CSS_SELECTOR", var.alertBellBut)
-        print(Fore.GREEN + "C3482 успешно выполнен - При нажатии на колокольчик открывается панель уведомлений" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3482 успешно выполнен - При нажатии на колокольчик открывается панель уведомлений" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3482 failed: {e}")
     return driver
+
+
 # Тест - Пользователь может посмотреть информацию о клиенте
 def C3542_client(driver):
     try:
         driver.get(var.urlHabrRegMe)
         click_element(driver, "ID", var.clientInfoBtn, "5")
         verify_element_present(driver, "CLASS_NAME", var.clientIcon, "5")
-        print(Fore.GREEN + "C3542 успешно выполнен - Пользователь может посмотреть информацию о клиенте" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3542 успешно выполнен - Пользователь может посмотреть информацию о клиенте" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3542 failed: {e}")
     return driver
+
+
 # Тест - В информации о клиенте - отображается количество активных переписок
 def C3568_client_act_mess(driver):
     try:
         driver.get(var.urlHabrRegMe)
         click_element(driver, "ID", var.clientInfoBtn, "5")
         verify_element_present(driver, "XPATH", var.reqStestProgress)
-        print(Fore.GREEN + "C3568 успешно выполнен - В информации о клиенте - отображается количество активных переписок" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3568 успешно выполнен - В информации о клиенте - отображается количество активных переписок" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3568 failed: {e}")
     return driver
+
+
 # Тест - В информации о клиенте - отображается количество успешных сделок
 def C3569_client_comp(driver):
     try:
         driver.get(var.urlHabrRegMe)
         click_element(driver, "ID", var.clientInfoBtn, "5")
         verify_element_present(driver, "XPATH", var.compByDeal)
-        print(Fore.GREEN + "C3569 успешно выполнен - В информации о клиенте - отображается количество успешных сделок" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3569 успешно выполнен - В информации о клиенте - отображается количество успешных сделок" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3569 failed: {e}")
     return driver
+
+
 # Тест - В информации о клиенте - отображается количество не успешных сделок
 def C3570_client_close(driver):
     try:
         driver.get(var.urlHabrRegMe)
         click_element(driver, "ID", var.clientInfoBtn, "5")
         verify_element_present(driver, "XPATH", var.closedReason)
-        print(Fore.GREEN + "C3570 успешно выполнен - В информации о клиенте - отображается количество не успешных сделок" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3570 успешно выполнен - В информации о клиенте - отображается количество не успешных сделок" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3570 failed: {e}")
     return driver
+
+
 # Тест - Информация о клиенте скрыта для существующего клиента - если нет комментария
 def C3566_info_hidden_without_comment(driver):
     try:
         driver.get(var.urlHabrRegMe)
         click_element(driver, "ID", var.clientInfoBtn, "5")
         verify_element_present(driver, "CLASS_NAME", var.clientIcon, "5")
-        print(Fore.GREEN + "C3566 успешно выполнен - Информация о клиенте скрыта для существующего клиента - если нет комментария" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3566 успешно выполнен - Информация о клиенте скрыта для существующего клиента - если нет комментария" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3573 failed: {e}")
     return driver
+
+
 # Тест - Менеджер не может заполнить комментарий к заказчику пробелами
 def C3586_client_comment_cannot_with_spaces(driver):
     try:
@@ -326,10 +364,12 @@ def C3586_client_comment_cannot_with_spaces(driver):
         # Проверяем что кнопка "Сохранить" задизейблена
         usp_send_button = driver.find_element(By.CLASS_NAME, var.saveClient)
         assert not usp_send_button.is_enabled(), "Кнопка 'Сохранить' должна быть неактивна"
-        print(Fore.GREEN + "C3586 успешно выполнен - Менеджер не может заполнить комментарий к заказчику пробелами" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3586 успешно выполнен - Менеджер не может заполнить комментарий к заказчику пробелами" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3586 failed: {e}")
     return driver
+
 
 # Тест - Менеджер при нажатии на карандаш может добавить описание
 def C3573_client_comment(driver):
@@ -342,19 +382,25 @@ def C3573_client_comment(driver):
         # Проверяем что введенный текст отображается правильно
         entered_text = driver.find_element(By.ID, var.commentForm).get_attribute("value")
         assert entered_text == "Comment 1", "Введенный текст не соответствует ожидаемому"
-        print(Fore.GREEN + "C3573 успешно выполнен - Менеджер при нажатии на карандаш может добавить описание" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3573 успешно выполнен - Менеджер при нажатии на карандаш может добавить описание" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3573 failed: {e}")
     return driver
+
+
 # Тест - Информация о клиенте раскрытая для существующего клиента - если есть комментарий
 def C3567_info_disclosed_with_comment(driver):
     try:
         driver.get(var.urlHabrRegMe)
         verify_element_present(driver, "CLASS_NAME", var.clientIcon)
-        print(Fore.GREEN + "C3567 успешно выполнен - Информация о клиенте раскрытая для существующего клиента - если есть комментарий" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3567 успешно выполнен - Информация о клиенте раскрытая для существующего клиента - если есть комментарий" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3567 failed: {e}")
     return driver
+
+
 # Тест - Менеджер может редактировать описание
 def C3574_client_comment_redact(driver):
     try:
@@ -369,6 +415,8 @@ def C3574_client_comment_redact(driver):
     except NoSuchElementException as e:
         print(f"Test C3574 failed: {e}")
     return driver
+
+
 # Тест - Менеджер может удалить описание
 def C3575_client_comment_del(driver):
     try:
@@ -383,6 +431,8 @@ def C3575_client_comment_del(driver):
     except NoSuchElementException as e:
         print(f"Test C3575 failed: {e}")
     return driver
+
+
 # Тест - При нажатии на глазик открывается форма отправки УТП для проверки дежурному
 def C3466_usp_Moderation(driver):
     try:
@@ -392,10 +442,13 @@ def C3466_usp_Moderation(driver):
         verify_element_present(driver, "ID", var.uspForm)
         enter_text(driver, "ID", var.uspForm, "УТП на проверку")
         click_element(driver, "CLASS_NAME", var.uspSend)
-        print(Fore.GREEN + "C3466 успешно выполнен - При нажатии на глазик открывается форма отправки УТП для проверки дежурному" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3466 успешно выполнен - При нажатии на глазик открывается форма отправки УТП для проверки дежурному" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3466 failed: {e}")
     return driver
+
+
 # Тест - Кнопка "Отправить" задизейбленна пока не введутся символы в форму
 def C3467_usp_Moderation_btn(driver):
     try:
@@ -405,20 +458,26 @@ def C3467_usp_Moderation_btn(driver):
         assert not usp_send_button.is_enabled(), "Кнопка отправки должна быть неактивна"
         enter_text(driver, "ID", var.uspForm, "Тест УТП на модерацию")
         click_element(driver, "CLASS_NAME", var.uspSend)
-        print(Fore.GREEN + "C3467 успешно выполнен - Кнопка 'Отправить' задизейбленна пока не введутся символы в форму" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3467 успешно выполнен - Кнопка 'Отправить' задизейбленна пока не введутся символы в форму" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3467 failed: {e}")
     return driver
+
+
 # Тест - После отправки УТП глазик пропадает, становится недоступным
 def C3469_usp_not_available(driver):
     try:
         driver.get(var.urlHabrRegNotMeSendUSP)
-        time.sleep(5) #Пауза чтобы закрыть уведомление
+        time.sleep(5)  # Пауза чтобы закрыть уведомление
         verify_element_not_present(driver, "ID", var.uspModeration)
-        print(Fore.GREEN + "C3469 успешно выполнен - После отправки УТП глазик пропадает, становится недоступным" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3469 успешно выполнен - После отправки УТП глазик пропадает, становится недоступным" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3469 failed: {e}")
     return driver
+
+
 # Тест - Когда кнопка сообщения обведена красным кругом - есть не прочитанное сообщение от клиента
 def C3470_mess_btn_red(driver):
     try:
@@ -427,10 +486,13 @@ def C3470_mess_btn_red(driver):
         button = driver.find_element(By.ID, var.messegeBtn)
         style = button.get_attribute("style")
         assert "border-color: red" in style, "Кнопка не обведена красным кругом"
-        print(Fore.GREEN + "C3470 успешно выполнен - Когда кнопка сообщения обведена красным кругом - есть не прочитанное сообщение от клиента" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3470 успешно выполнен - Когда кнопка сообщения обведена красным кругом - есть не прочитанное сообщение от клиента" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3470 failed: {e}")
     return driver
+
+
 # Тест - Палец вверх отображается в чате с клиентом, для отметки что сообщение не требует ответа
 def C3476_message_thumb_up(driver):
     try:
@@ -442,10 +504,13 @@ def C3476_message_thumb_up(driver):
         verify_element_present(driver, "ID", var.msgThumbUp)
         # Нажимаем на палец вверх
         click_element(driver, "ID", "btn-message-without-answer")
-        print(Fore.GREEN + "C3476 успешно выполнен - Палец вверх отображается в чате с клиентом, для отметки что сообщение не требует ответа" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3476 успешно выполнен - Палец вверх отображается в чате с клиентом, для отметки что сообщение не требует ответа" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3476 failed: {e}")
     return driver
+
+
 # Тест - Когда кнопка сообщения обведена зеленым - на все сообщения есть ответ , при клике по ней - переход в переписку по проекту
 def C3472_mess_btn_green(driver):
     try:
@@ -458,10 +523,13 @@ def C3472_mess_btn_green(driver):
         # Переключение на новую вкладку
         driver.switch_to.window(driver.window_handles[-1])
         assert "conversations" in driver.current_url, "URL не содержит текст 'conversations'"
-        print(Fore.GREEN + "C3470 успешно выполнен - Когда кнопка сообщения обведена зеленым - на все сообщения есть ответ, при клике по ней - переход в переписку по проекту" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3470 успешно выполнен - Когда кнопка сообщения обведена зеленым - на все сообщения есть ответ, при клике по ней - переход в переписку по проекту" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3470 failed: {e}")
     return driver
+
+
 # Тест - При нажатии на карандаш, открывается форма модерации сообщения
 def C3473_message_moderation_form(driver):
     try:
@@ -472,10 +540,13 @@ def C3473_message_moderation_form(driver):
         driver.switch_to.window(driver.window_handles[-1])
         click_element(driver, "ID", var.msgSendForm)
         verify_element_present(driver, "ID", var.msgForm)
-        print(Fore.GREEN + "C3473 успешно выполнен - При нажатии на карандаш, открывается форма модерации сообщения" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3473 успешно выполнен - При нажатии на карандаш, открывается форма модерации сообщения" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3473 failed: {e}")
     return driver
+
+
 # Тест - Кнопка "Отправить" задизейбленна пока не заполнена форма карандаша для отправки дежурному
 def C3474_message_moderation_btn(driver):
     try:
@@ -491,10 +562,13 @@ def C3474_message_moderation_btn(driver):
         enter_text(driver, "ID", var.msgForm, "Текст сообщения для проверки дежурному")
         # Проверяем что кнопка "Отправить" активна
         assert usp_send_button.is_enabled(), "Кнопка отправки должна быть активна"
-        print(Fore.GREEN + "C3474 успешно выполнен - Кнопка 'Отправить' задизейбленна пока не заполнена форма карандаша для отправки дежурному" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3474 успешно выполнен - Кнопка 'Отправить' задизейбленна пока не заполнена форма карандаша для отправки дежурному" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3474 failed: {e}")
     return driver
+
+
 # Тест - При отправке сообщения на модерацию оно приходит дежурному менеджеру
 def C3475_message_moderation_send(driver):
     try:
@@ -506,11 +580,13 @@ def C3475_message_moderation_send(driver):
         click_element(driver, "ID", var.msgSendForm)
         enter_text(driver, "ID", var.msgForm, "Текст сообщения для проверки дежурному")
         click_element(driver, "CLASS_NAME", var.msgSendModerate)
-        print(Fore.GREEN + "C3475 успешно выполнен - При отправке сообщения на модерацию оно приходит дежурному менеджеру" + Style.RESET_ALL)
+        print(
+            Fore.GREEN + "C3475 успешно выполнен - При отправке сообщения на модерацию оно приходит дежурному менеджеру" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3475 failed: {e}")
     finally:
         driver.quit()
+
 
 if __name__ == "__main__":
     driver = None
@@ -772,5 +848,3 @@ if __name__ == "__main__":
         C3475_message_moderation_send(driver)
     except Exception as e:
         print(Fore.RED + f"Test C3475 failed: {e}" + Style.RESET_ALL)
-
-
