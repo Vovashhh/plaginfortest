@@ -1,10 +1,27 @@
-# Запуск проекта на Selenium с использованием Python
+# Автоматическое тестирование плагина ГГ с помощью Selenium и Python
 
-Этот проект демонстрирует пример запуска тестов с использованием Selenium и Python.
+Автоматические тесты для тестирования плагина ГГ.
+
+## Содержание
+
+1. [Описание](#описание)
+2. [Установка](#установка)
+3. [Конфигурация](#конфигурация)
+4. [Запуск тестов](#запуск-тестов)
+5. [Примеры кода](#примеры-кода)
+
+## Описание
+
+Список покрытых тестов можно посмотреть
+в [таблице статусов автотестов](https://docs.google.com/spreadsheets/d/1qqlhKPdRqQpEVlrwVBCH4_zuKuKWV_pKTApflPJbY-U/edit?gid=0#gid=0).
+
+В [TestRail](https://qa.dzencode.net/index.php?/suites/view/1&group_by=cases:section_id&group_order=desc&display_deleted_cases=0&group_id=1111)
+можно просмотреть какие тесты автоматизированы, выбрав фильтр `Automation Type - renorex`. Для просмотра не
+автоматизированных тестов, в фильтре можно выбрать `none`.
 
 ## Установка
 
-1. Убедитесь, что у вас установлен Python и pip.
+1. Убедитесь, что у вас установлен Python, pip, а также Selenium.
 2. Клонируйте репозиторий:
 
     ```sh
@@ -19,27 +36,41 @@
     .venv\Scripts\activate      # для Windows
     ```
 
-4. Установите Selenium и другие зависимости (если они необходимы) с помощью pip:
+4. Установите зависимости с помощью pip:
 
     ```sh
-    pip install selenium
-    ``` 
+    pip install selenium pyperclip colorama
+    ```
 
-5. Установить вспомогательный библиотеки
-   ```sh
-   pip install pyperclip
-   pip install colorama
-   ```
+## Конфигурация
 
-5. #### В файле var.py - можно задать переменные, в том числе для пути к плагину
-   ### Для запуска нажать на Run в IDE 
+В файле `var.py` можно задать переменные, в том числе для пути к плагину.
 
-___
-### Блокеры:
-1. Weblancer - блокер (капча)
+Для корректной работы автотестов нужно после каждого прогона добавлять актуальную новую заявку в
+переменные `urlHabrNew`, `urlKworkNew`, `urlFreelanceNew`, `urlFreelancerNew`.
+
+Для биржи Habr периодически нужно прерывать загрузку страницы из-за вечного лоудера.
+
+## Запуск тестов
+
+Запуск тестов осуществляется в IDE, нажав кнопку "Run". Результат прохождения тестов будет отображаться в Run-е в
+формате:
+
+- <span style="color:green">Зеленый - тест успешно пройдет</span>
+- <span style="color:red">Красный - тест провален</span>
+
+Также отображается дополнительная информация и номер кейса с TestRail.
+
+### Пример запуска тестов:
+
+![Image](https://img001.prntscr.com/file/img001/qiW1SLJnQneL7qiop2TtBw.png)
 
 ---
+
+## Примеры кода
+
 ### Шаблон проверки с учетом логина
+
 ```sh
 def name_check():
 driver = setup_driver()
@@ -53,7 +84,8 @@ driver = setup_driver()
         driver.quit()
 #Проверка 
 ```
-### Конструкция для запуска тестов в случае их провала 
+
+### Конструкция для запуска тестов в случае их провала
 
 ```sh 
 if __name__ == "__main__":
@@ -62,7 +94,9 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Error running C3446: {e}")
 ```
+
 ### Конструкция для запуска тестов без постоянной логинизации
+
 ```sh
 def C3467_usp_Moderation_btn(driver):
     try:
@@ -71,6 +105,7 @@ def C3467_usp_Moderation_btn(driver):
         # Исключение
     return driver
 ```
+
 ```sh
 if __name__ == "__main__":
     driver = None
@@ -84,26 +119,31 @@ if __name__ == "__main__":
 ```
 
 #### Использование команды для ввода текста
+
 <code>
     enter_text(driver, "ID", var.uspForm, "var.uspForm")
 </code>
 
 #### Использование команды для нажатия на селектор
+
 <code>
     click_element(driver, "ID", var.uspModeration)
 </code>
 
 #### Использование команды для проверки формы на соответсвие
+
 <code>
     verify_text_in_element(driver, "XPATH", var.regProjByMe, "Тут текст")
 </code>
 
 #### Использование команды для проверки что элемент пристутсвует на странице
+
 <code>
       verify_element_present(driver, "CLASS_NAME", var.dzenHistoryTab)
 </code>
 
 #### Использование команды для проверки что элемент отсутсвует на странице
+
 <code>
       verify_element_not_present(driver, "ID", var.uspModeration)
 </code>
