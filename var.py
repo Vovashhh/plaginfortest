@@ -1,9 +1,9 @@
 # Стоит ли переделывать переменные под словарь ...
 
-pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin"
+pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin" #"/Users/max/Downloads/USP_Plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/582802"  # новая
+urlHabrNew = "https://freelance.habr.com/tasks/583188"  # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
@@ -34,6 +34,12 @@ urlFreelancerRegNotMeSendUSP = "https://www.freelancer.com/projects/c-sharp-prog
 
 btnCompany = "//select/option[2]"
 
+# Спарсить все сообщения (HABR) - ID
+msgParsingBtn = "btn-message-parse"
+# "Парсинг сообщений завершен" в модальном окне парсинга (HABR) XPATH
+parsingEnd = "//div[contains(text(), 'Парсинг завершен')]"
+# Закрыть модальное окно парсинга сообщений (HABR) CLASS_NAME
+parsModalClose = "plugin-modal-close"
 # Автовход XPATH
 autoLogin = "//button[contains(text(), 'Автовход') and not(contains(text(), 'по сессии'))]"
 # Автовход по сессии XPATH
