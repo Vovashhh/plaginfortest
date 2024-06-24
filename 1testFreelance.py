@@ -596,6 +596,9 @@ def C3587_mess_icon_after_registration(driver):
     try:
         driver.get(var.urlFreelanceRegMe)
         verify_element_present(driver, "ID", var.messegeBtn, "5")
+        click_element(driver, "ID", var.messegeBtn, "5")
+        driver.switch_to.window(driver.window_handles[-1])
+        assert "gotochat" in driver.current_url, "URL не содержит текст 'gotochat'"
         print(
             Fore.GREEN + "C3587 успешно выполнен - Появляется ссылка на чат (иконка сообщения) при регистрации проекта." + Style.RESET_ALL)
     except NoSuchElementException as e:
