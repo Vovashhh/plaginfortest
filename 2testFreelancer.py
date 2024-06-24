@@ -468,20 +468,18 @@ def C3467_usp_Moderation_btn(driver):
 def C3469_usp_not_available(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)  # Пауза чтобы закрыть уведомление
-        verify_element_not_present(driver, "ID", var.uspModeration)
+        verify_element_not_present(driver, "ID", var.uspModeration, "5")
         print(
             Fore.GREEN + "C3469 успешно выполнен - После отправки УТП глазик пропадает, становится недоступным" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3469 failed: {e}")
     return driver
 
-
 # Тест - Когда кнопка сообщения обведена красным кругом - есть не прочитанное сообщение от клиента
 def C3470_mess_btn_red(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)  # Пауза чтобы закрыть уведомление
+        time.sleep(5)
         button = driver.find_element(By.ID, var.messegeBtn)
         style = button.get_attribute("style")
         assert "border-color: red" in style, "Кнопка не обведена красным кругом"
@@ -491,13 +489,11 @@ def C3470_mess_btn_red(driver):
         print(f"Test C3470 failed: {e}")
     return driver
 
-
 # Тест - Палец вверх отображается в чате с клиентом, для отметки что сообщение не требует ответа
 def C3476_message_thumb_up(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)
-        click_element(driver, "ID", var.messegeBtn)
+        click_element(driver, "ID", var.messegeBtn, "5")
         driver.switch_to.window(driver.window_handles[-1])
         # Находим елемент "Палец вверх"
         verify_element_present(driver, "ID", var.msgThumbUp)
@@ -514,7 +510,7 @@ def C3476_message_thumb_up(driver):
 def C3472_mess_btn_green(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)  # Пауза чтобы закрыть уведомление
+        time.sleep(5)
         button = driver.find_element(By.ID, var.messegeBtn)
         style = button.get_attribute("style")
         assert "border-color: green" in style, "Кнопка не обведена зеленым кругом"
@@ -528,13 +524,11 @@ def C3472_mess_btn_green(driver):
         print(f"Test C3470 failed: {e}")
     return driver
 
-
 # Тест - При нажатии на карандаш, открывается форма модерации сообщения
 def C3473_message_moderation_form(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)
-        click_element(driver, "ID", var.messegeBtn)
+        click_element(driver, "ID", var.messegeBtn, "5")
         # Переключение на новую вкладку
         driver.switch_to.window(driver.window_handles[-1])
         click_element(driver, "ID", var.msgSendForm)
@@ -550,8 +544,7 @@ def C3473_message_moderation_form(driver):
 def C3474_message_moderation_btn(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)
-        click_element(driver, "ID", var.messegeBtn)
+        click_element(driver, "ID", var.messegeBtn, "5")
         # Переключение на новую вкладку
         driver.switch_to.window(driver.window_handles[-1])
         click_element(driver, "ID", var.msgSendForm)
@@ -572,8 +565,7 @@ def C3474_message_moderation_btn(driver):
 def C3475_message_moderation_send(driver):
     try:
         driver.get(var.urlFreelancerRegNotMeSendUSP)
-        time.sleep(5)
-        click_element(driver, "ID", var.messegeBtn)
+        click_element(driver, "ID", var.messegeBtn, "5")
         # Переключение на новую вкладку
         driver.switch_to.window(driver.window_handles[-1])
         click_element(driver, "ID", var.msgSendForm)
@@ -583,6 +575,16 @@ def C3475_message_moderation_send(driver):
             Fore.GREEN + "C3475 успешно выполнен - При отправке сообщения на модерацию оно приходит дежурному менеджеру" + Style.RESET_ALL)
     except NoSuchElementException as e:
         print(f"Test C3475 failed: {e}")
+    return driver
+
+def C3480_mess_you_reg_project(driver):
+    try:
+        driver.get(var.urlFreelancerRegMe)
+        verify_text_in_element(driver, "XPATH", var.regProjByMe, "Вы зарегистрировали проект", "10")
+        print(
+            Fore.GREEN + "C3480 успешно выполнен - Когда вы зарегестрировали проект в верху сайта отображается уведомление" + Style.RESET_ALL)
+    except NoSuchElementException as e:
+        print(f"Test C3482 failed: {e}")
     finally:
         driver.quit()
 
@@ -847,3 +849,11 @@ if __name__ == "__main__":
         C3475_message_moderation_send(driver)
     except Exception as e:
         print(Fore.RED + f"Test C3475 failed: {e}" + Style.RESET_ALL)
+
+    try:
+        if driver is None:
+            driver = setup_driver()
+            navigate_and_login(driver)
+        C3480_mess_you_reg_project(driver)
+    except Exception as e:
+        print(Fore.RED + f"Error running C3480: {e}" + Style.RESET_ALL)
