@@ -10,7 +10,7 @@ urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправ�
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = "https://kwork.ru/projects/2492775/view"  #
+urlKworkNew = "https://kwork.ru/projects/2452561/view"  #
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = "https://kwork.ru/projects/2445384/view"  # Отправил УТП я

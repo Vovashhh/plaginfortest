@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="+ переменная">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="+ линтер и добавленные актуальные ссылки на проекты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1testFreelance.py" beforeDir="false" afterPath="$PROJECT_DIR$/1testFreelance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2testFreelancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/2testFreelancer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3testHabr.py" beforeDir="false" afterPath="$PROJECT_DIR$/3testHabr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4testKwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/4testKwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
@@ -335,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718874560648</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="+ линтер и добавленные актуальные ссылки на проекты">
+      <option name="closed" value="true" />
+      <created>1718975205812</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718975205812</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,6 +372,7 @@
     <MESSAGE value="Добавление описания, и структура для непрерывного запуска тестов" />
     <MESSAGE value="добавлен кейс C3460 и необходимые перменные" />
     <MESSAGE value="+ переменная" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ переменная" />
+    <MESSAGE value="+ линтер и добавленные актуальные ссылки на проекты" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ линтер и добавленные актуальные ссылки на проекты" />
   </component>
 </project>

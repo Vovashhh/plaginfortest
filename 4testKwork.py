@@ -1,6 +1,5 @@
 import time
 from selenium.common.exceptions import NoSuchElementException
-# from selenium import webdriver
 from chrome_driver_utils import verify_element_not_present, verify_element_present, chrome_with_extension, \
     login_and_wait, click_element, enter_text, verify_text_in_element
 from selenium.webdriver.common.by import By
@@ -8,10 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import var
 import pyperclip
-from colorama import init, Fore, Style
-
-expected_text_login = "Найти задание/вакансию"
-expected_unauthorized_text = "Вы не авторизованы, авторизируйтесь"
+from colorama import Fore, Style
 
 
 # Добавление плагина в браузер
