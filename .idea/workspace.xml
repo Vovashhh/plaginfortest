@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Убрал не используемый код">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Обновление readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -72,6 +73,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\crm.28540\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="70d4c194-63c2-4818-8257-2a0d91ab47b5" />
+        <option name="reportName" value="plaginfortest/qodana/2024-06-24" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\crm.28540\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="70d4c194-63c2-4818-8257-2a0d91ab47b5" reportId="plaginfortest/qodana/2024-06-24" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\crm.28540\Desktop\SeleniumTest" />
@@ -347,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719221775753</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Обновление readme">
+      <option name="closed" value="true" />
+      <created>1719226553478</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1719226553478</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,6 +403,7 @@
     <MESSAGE value="+ переменная" />
     <MESSAGE value="+ линтер и добавленные актуальные ссылки на проекты" />
     <MESSAGE value="Убрал не используемый код" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал не используемый код" />
+    <MESSAGE value="Обновление readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновление readme" />
   </component>
 </project>
