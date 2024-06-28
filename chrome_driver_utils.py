@@ -7,6 +7,21 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
+def update_variable_in_var_file(variable_name, new_value, filename="var.py", encoding='utf-8'):
+    # Прочитайте содержимое файла с указанием кодировки
+    with open(filename, "r", encoding=encoding) as file:
+        lines = file.readlines()
+
+    # Найдите строку с указанной переменной и замените её значение
+    for i in range(len(lines)):
+        if lines[i].startswith(variable_name):
+            lines[i] = f"{variable_name} = '{new_value}'\n"
+            break
+
+    # Запишите измененное содержимое обратно в файл с указанием кодировки
+    with open(filename, "w", encoding=encoding) as file:
+        file.writelines(lines)
+
 def chrome_with_extension(extension_dir_path):
     options = webdriver.ChromeOptions()
     options.add_argument(f"--load-extension={os.path.abspath(extension_dir_path)}")

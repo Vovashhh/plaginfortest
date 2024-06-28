@@ -151,3 +151,8 @@ if __name__ == "__main__":
 <code>
       verify_element_not_present(driver, "ID", var.uspModeration)
 </code>
+
+#### Использование команды для подмены переменной ссылки в var с помощью parser.py
+<code>
+    update_variable_in_var_file("urlKworkNew", url)
+</code>

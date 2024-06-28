@@ -1,30 +1,31 @@
 # Стоит ли переделывать переменные под словарь ...
 
-pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin" #"/Users/max/Downloads/USP_Plugin"
+#pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin" #"/Users/max/Downloads/USP_Plugin"
+pathToPlagin = "C:/Users/crm.28540/Documents/plugin"
 
 urlHabr = "https://freelance.habr.com/"
-urlHabrNew = "https://freelance.habr.com/tasks/583228"  # новая
+urlHabrNew = "https://freelance.habr.com/tasks/583700"  # новая
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
 urlHabrRegMeSendUSP = "https://freelance.habr.com/tasks/577246"  # Отправил УТП я
 urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отправил УТП не я
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = "https://kwork.ru/projects/2452565/view"  #
+urlKworkNew = 'https://kwork.ru/projects/2499547'
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
 urlKworkRegMeSendUSP = "https://kwork.ru/projects/2445384/view"  # Отправил УТП я
 urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отправил УТП не я
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = "https://freelance.ru/projects/proekt-teplih-polov-i-otopleniya-kottedzha-1580328.html"  # новая
+urlFreelanceNew = "https://freelance.ru/projects/nastroit-reklamnuyu-kompaniyu-v-kategorii-vikup-avto-1580808.html"  # новая
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
 urlFreelanceRegMeSendUSP = "https://freelance.ru/projects/sdelat-portfolio-dlya-nok-norpriz-1578473.html"  # Отправил УТП я
 urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 
 urlFreelancer = "https://www.freelancer.com/"
-urlFreelancerNew = "https://www.freelancer.com/projects/c-sharp-programming/Custom-PDF-Generation-Class/details?lang=uk&ngsw-bypass="  # новая
+urlFreelancerNew = "https://www.freelancer.com/projects/php/Complete-Mobile-Web-PWA-App/details"  # новая
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
 urlFreelancerRegMeSendUSP = "https://www.freelancer.com/projects/website-design/Custom-Landing-Page-Design/details"  # Отправил УТП я
