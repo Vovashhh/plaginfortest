@@ -53,7 +53,7 @@ try:
     print(f"Значение парсера freelancer: {iKwork}")
 
     # Обновите значение переменной urlKworkNew в файле var.py
-    update_variable_in_var_file("urlFreelancer", urlFreelancer)
+    update_variable_in_var_file("urlFreelancerNew", urlFreelancer)
     update_variable_in_var_file("textFreelancer", textFreelancer)
 #-----------------------------------------------------------------------
     # Откройте нужную страницу

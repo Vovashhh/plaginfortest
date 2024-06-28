@@ -3,11 +3,11 @@
 #pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin" #"/Users/max/Downloads/USP_Plugin"
 pathToPlagin = "C:/Users/crm.28540/Documents/plugin"
 
-i = 6
+i = 8
 
 urlHabr = "https://freelance.habr.com"
-urlHabrNew = 'https://freelance.habr.com/tasks/584148'
-nameUrlHabr = 'Создание иллюстраций для соц. сетей'
+urlHabrNew = 'https://freelance.habr.com/tasks/584146'
+nameUrlHabr = 'Сделать бекенд для Telegram Miniapps (Node.js)'
 
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
@@ -16,8 +16,8 @@ urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отпра
 #--------
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = 'https://kwork.ru/projects/2500041'
-nameUrlKwork = 'Дизайн лендинга с адаптивом'
+urlKworkNew = 'https://kwork.ru/projects/2500046'
+nameUrlKwork = 'Размещать проекты, подбирать исполнителей. Только для ИП'
 
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
@@ -26,8 +26,8 @@ urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отпра
 #--------
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = 'https://freelance.ru/projects/proekti-besedok-1572439.html'
-nameUrlFreelance = 'проекты беседок'
+urlFreelanceNew = 'https://freelance.ru/projects/projti-opros-onlajn-1580007.html'
+nameUrlFreelance = 'Пройти опрос (онлайн)'
 
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
@@ -35,9 +35,9 @@ urlFreelanceRegMeSendUSP = "https://freelance.ru/projects/sdelat-portfolio-dlya-
 urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-dlya-platformi-dlya-prodazhi-odezhdi-1564116.html"  # Отправил УТП не я
 #--------
 
-urlFreelancer = 'https://www.freelancer.com/projects/google-website-optimizer/website-audit-for-image-sizing'
-urlFreelancerNew = ""  # новая
-textFreelancer = 'Website Audit for Image Sizing & App Compatibility'
+urlFreelancer = 'https://www.freelancer.com/'
+urlFreelancerNew = 'https://www.freelancer.com/projects/logo-design/minimalist-furniture-brand-logo-design'
+textFreelancer = 'Minimalist Furniture Brand Logo Design'
 
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной
