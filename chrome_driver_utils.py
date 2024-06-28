@@ -6,6 +6,31 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+def update_num_variable_in_var_file(variable_name, filename="var.py", encoding='utf-8'):
+    # Прочитайте содержимое файла с указанием кодировки
+    with open(filename, "r", encoding=encoding) as file:
+        lines = file.readlines()
+
+    # Найдите строку с указанной переменной и замените её значение
+    for i in range(len(lines)):
+        if lines[i].startswith(variable_name):
+            # Извлечение текущего значения переменной
+            current_value = int(lines[i].split('=')[1].strip())
+            # Проверка значения переменной и обновление
+            if current_value < 11:
+                new_value = current_value + 1
+            else:
+                new_value = 0
+            lines[i] = f"{variable_name} = {new_value}\n"
+            break
+
+    # Запишите измененное содержимое обратно в файл с указанием кодировки
+    with open(filename, "w", encoding=encoding) as file:
+        file.writelines(lines)
+
+    # Запишите измененное содержимое обратно в файл с указанием кодировки
+    with open(filename, "w", encoding=encoding) as file:
+        file.writelines(lines)
 
 def update_variable_in_var_file(variable_name, new_value, filename="var.py", encoding='utf-8'):
     # Прочитайте содержимое файла с указанием кодировки

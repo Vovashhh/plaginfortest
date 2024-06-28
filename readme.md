@@ -156,3 +156,8 @@ if __name__ == "__main__":
 <code>
     update_variable_in_var_file("urlKworkNew", url)
 </code>
+
+#### Команда для изменения каунтера i
+<code>
+      update_num_variable_in_var_file("i", filename="var.py")
+</code>

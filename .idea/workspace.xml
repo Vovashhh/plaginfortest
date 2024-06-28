@@ -8,9 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки">
-      <change afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
@@ -50,36 +50,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests in enterFreelance.py.executor": "Run",
-    "Python tests.Python tests in enterFreelancer.py.executor": "Run",
-    "Python tests.Python tests in enterHabr.py.executor": "Run",
-    "Python tests.Python tests in enterKwork.py.executor": "Run",
-    "Python tests.Python tests in enterWeblancer.py.executor": "Run",
-    "Python tests.Python tests in test.py.executor": "Run",
-    "Python.1enterFreelance.executor": "Run",
-    "Python.1testFreelance.executor": "Run",
-    "Python.2enterFreelancer.executor": "Run",
-    "Python.2testFreelancer.executor": "Run",
-    "Python.3testHabr.executor": "Run",
-    "Python.4testKwork.executor": "Run",
-    "Python.chrome_driver_utils.executor": "Run",
-    "Python.enterFreelance.executor": "Run",
-    "Python.enterHabr.executor": "Run",
-    "Python.enterKwork.executor": "Run",
-    "Python.parser.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.var.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/crm.28540/Desktop/plaginfortest",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in enterFreelance.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterFreelancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterHabr.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterKwork.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in enterWeblancer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1testFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2enterFreelancer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2testFreelancer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3testHabr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4testKwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chrome_driver_utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterFreelance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterHabr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enterKwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.var.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/crm.28540/Desktop/plaginfortest&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\crm.28540\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="70d4c194-63c2-4818-8257-2a0d91ab47b5" reportId="plaginfortest/qodana/2024-06-24" />
@@ -384,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719567816802</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки">
+      <option name="closed" value="true" />
+      <created>1719567843489</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1719567843489</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
