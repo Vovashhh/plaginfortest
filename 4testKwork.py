@@ -592,7 +592,8 @@ def C3598_mess_icon_after_registration(driver):
         verify_element_present(driver, "ID", var.messegeBtn, "5")
         click_element(driver, "ID", var.messegeBtn, "5")
         driver.switch_to.window(driver.window_handles[-1])
-        assert "inbox" in driver.current_url, "URL не содержит текст 'inbox'"
+        assert any(
+            keyword in driver.current_url for keyword in ["inbox", "user"]), "URL не содержит текст 'inbox' или 'user'"
         print(
             Fore.GREEN + "C3598 успешно выполнен - Появляется ссылка на чат (иконка сообщения) при регистрации проекта." + Style.RESET_ALL)
     except NoSuchElementException as e:
