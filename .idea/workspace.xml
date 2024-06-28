@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Обновление readme">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки">
       <change afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
     </list>
     <list id="f64cf44f-17ec-4c83-82a0-6a9256d7f4a4" name="Changes by max" comment="" />
@@ -375,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719238644888</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки">
+      <option name="closed" value="true" />
+      <created>1719567816802</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1719567816802</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,6 +415,7 @@
     <MESSAGE value="+ линтер и добавленные актуальные ссылки на проекты" />
     <MESSAGE value="Убрал не используемый код" />
     <MESSAGE value="Обновление readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновление readme" />
+    <MESSAGE value="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки" />
   </component>
 </project>
