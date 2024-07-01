@@ -3,11 +3,11 @@
 #pathToPlagin = "C:/Users/crm.28540/Desktop/USP_Plugin" #"/Users/max/Downloads/USP_Plugin"
 pathToPlagin = "C:/Users/crm.28540/Documents/plugin"
 
-i = 8
+i = 2
 
 urlHabr = "https://freelance.habr.com"
-urlHabrNew = 'https://freelance.habr.com/tasks/584146'
-nameUrlHabr = 'Сделать бекенд для Telegram Miniapps (Node.js)'
+urlHabrNew = 'https://freelance.habr.com/tasks/584412'
+nameUrlHabr = 'Небольшая задача по написанию команды ADB на Kotlin для Android'
 
 urlHabrRegMe = "https://freelance.habr.com/tasks/580546"  # зарегестрированна за мной
 urlHabrRegNotMe = "https://freelance.habr.com/tasks/578786"  # зарегана не мной
@@ -16,8 +16,8 @@ urlHabrRegNotMeSendUSP = "https://freelance.habr.com/tasks/578566"  # Отпра
 #--------
 
 urlKwork = "https://kwork.ru/"
-urlKworkNew = 'https://kwork.ru/projects/2500046'
-nameUrlKwork = 'Размещать проекты, подбирать исполнителей. Только для ИП'
+urlKworkNew = 'https://kwork.ru/projects/2501519'
+nameUrlKwork = 'Трафик на сайт'
 
 urlKworkRegMe = "https://kwork.ru/projects/2480675/view"  # зарегестрированна за мной
 urlKworkRegNotMe = "https://kwork.ru/projects/2460455/view"  # зарегана не мной
@@ -26,8 +26,8 @@ urlKworkRegNotMeSendUSP = "https://kwork.ru/projects/2469228/view"  # Отпра
 #--------
 
 urlFreelance = "https://freelance.ru/"
-urlFreelanceNew = 'https://freelance.ru/projects/projti-opros-onlajn-1580007.html'
-nameUrlFreelance = 'Пройти опрос (онлайн)'
+urlFreelanceNew = 'https://freelance.ru/projects/planirovki-domov-gotovim-renderam-starim-planirovkam-edinom-stile-1563261.html'
+nameUrlFreelance = 'Планировки домов по готовым рендерам и старым планировкам в едином стиле для каталога'
 
 urlFreelanceRegMe = "https://freelance.ru/projects/sozdanie-sajta-skupka-problemnih-avto-na-tilde-1576785.html"  # зарегестрированна за мной
 urlFreelanceRegNotMe = ""  # зарегана не мной
@@ -36,8 +36,8 @@ urlFreelanceRegNotMeSendUSP = "https://freelance.ru/projects/razrabotat-dizajn-d
 #--------
 
 urlFreelancer = 'https://www.freelancer.com/'
-urlFreelancerNew = 'https://www.freelancer.com/projects/logo-design/minimalist-furniture-brand-logo-design'
-textFreelancer = 'Minimalist Furniture Brand Logo Design'
+urlFreelancerNew = 'https://www.freelancer.com/projects/shopify-site/woocommerce-shopify-migration-with-new'
+textFreelancer = 'Woocommerce to Shopify Migration with New Design'
 
 urlFreelancerRegMe = "https://www.freelancer.com/projects/python/TradeTron-custom-strategy-builder-for-37642435/details"  # зарегестрированна за мной
 urlFreelancerRegNotMe = ""  # зарегана не мной

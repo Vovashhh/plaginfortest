@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки">
+    <list default="true" id="36d1d65e-4572-4680-907a-f2106a0fb682" name="Changes" comment="Добавил файл для парсинга свежих ссылок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome_driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_driver_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
@@ -392,7 +391,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719567843489</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Добавил файл для парсинга свежих ссылок">
+      <option name="closed" value="true" />
+      <created>1719597792817</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1719597792817</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Добавил файл для парсинга свежих ссылок">
+      <option name="closed" value="true" />
+      <created>1719597905669</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1719597905669</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,6 +439,7 @@
     <MESSAGE value="Убрал не используемый код" />
     <MESSAGE value="Обновление readme" />
     <MESSAGE value="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил парсинг ссылки kword и кастомную команду для обновления ссылки" />
+    <MESSAGE value="Добавил файл для парсинга свежих ссылок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил файл для парсинга свежих ссылок" />
   </component>
 </project>

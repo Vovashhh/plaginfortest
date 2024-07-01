@@ -28,7 +28,7 @@ try:
     update_num_variable_in_var_file("i", filename="var.py")
 #-----------------------------------------------------------------------
     # Откройте нужную страницу
-    driver.get("https://freelance.ru/project/search/pro?c=")
+    driver.get("https://freelance.ru/project/search/pro?c=&q=&m=or&e=&a=0&a=1&v=0&f=&t=&o=0&o=1&b=")
 
     # Найдите элемент по xPath и заберите ссылку
     elementFreelance = driver.find_element(By.XPATH, getUrlFreelance)
